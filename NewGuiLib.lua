@@ -529,7 +529,7 @@ function lib:CreateWindow()
 						createnotification(title, "Enabled "..title, 4, true)
 						configtable[title]["IsToggled"] = true
 					end)
-					toggle.BackgroundColor3 = 
+					toggle.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 					playdingsound(true)
 				end
 			end
