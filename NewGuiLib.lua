@@ -352,7 +352,7 @@ function lib:CreateWindow()
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
 		tabname.TextSize = 23.000
 		tabname.TextWrapped = true
-		tabname.TextXAlignment = Enum.TextXAlignment.Left
+		tabname.TextXAlignment = Enum.TextXAlignment.Center
 
 		assetthing.Parent = tabname
 		assetthing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
