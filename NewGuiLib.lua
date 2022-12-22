@@ -327,13 +327,14 @@ function lib:CreateWindow()
 		tab.Modal = true
 		uilistlay.Parent = tab
 		uilistlay.SortOrder = Enum.SortOrder.LayoutOrder
-		tab.Name = " "
+		tab.Name = title
+		tab.Text = " "
 		tab.ZIndex = 1
 		tab.Parent = TabsFrame
 		tab.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 		tab.BorderSizePixel = 0
 		tab.Position = UDim2.new(0,40,0.858895704, 0)
-		tab.Size = UDim2.new(0, 220, 0, 28)
+		tab.Size = UDim2.new(0, 175, 0, 23)
 		tab.Active=true
 		tab.LayoutOrder = 1 + #tabs
 		tab.AutoButtonColor = false
