@@ -348,7 +348,7 @@ function lib:CreateWindow()
 		tabname.Position = UDim2.new(0, 203,0, 37)
 		tabname.Size = UDim2.new(0, 175, 0, 23)
 		tabname.Font = Enum.Font.SourceSans
-		tabname.Text = "   "..title
+		tabname.Text = " "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
 		tabname.TextSize = 26.000
 		tabname.TextWrapped = true
@@ -398,7 +398,7 @@ function lib:CreateWindow()
 			toggle.BackgroundColor3 = Color3.fromRGB(80, 79, 82)
 			toggle.BorderSizePixel = 0
 			toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
-			toggle.Size = UDim2.new(0, 175, 0, 23)
+			toggle.Size = UDim2.new(0, 175, 0, 26)
 			toggle.Text = ""
 			togname.Name = "toggle_" .. title .. "234"
 			togname.Parent = toggle
