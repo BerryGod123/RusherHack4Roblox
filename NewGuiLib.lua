@@ -327,7 +327,7 @@ function lib:CreateWindow()
 		tab.Modal = true
 		uilistlay.Parent = tab
 		uilistlay.SortOrder = Enum.SortOrder.LayoutOrder
-		tab.Name = title
+		tab.Name = " "
 		tab.ZIndex = 1
 		tab.Parent = TabsFrame
 		tab.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
