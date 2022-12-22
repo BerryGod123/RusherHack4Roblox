@@ -345,10 +345,10 @@ function lib:CreateWindow()
 		tabname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		tabname.BackgroundTransparency = 1.000
 		tabname.BorderSizePixel = 0
-		tabname.Position = UDim2.new(0, 199,0, 40)
+		tabname.Position = UDim2.new(0, 199,0, 34)
 		tabname.Size = UDim2.new(0, 145, 0, 13)
 		tabname.Font = Enum.Font.SourceSansBold
-		tabname.Text = "    "..title
+		tabname.Text = "        "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
 		tabname.TextSize = 23.000
 		tabname.TextWrapped = true
