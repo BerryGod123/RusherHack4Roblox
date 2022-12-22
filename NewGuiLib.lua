@@ -332,7 +332,7 @@ function lib:CreateWindow()
 		tab.ZIndex = 1
 		tab.Parent = TabsFrame
 		tab.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
-		tab.BorderSizePixel = 0
+		tab.BorderSizePixel = 2
 		tab.Position = UDim2.new(0,40,0.858895704, 0)
 		tab.Size = UDim2.new(0, 175, 0, 23)
 		tab.Active=true
