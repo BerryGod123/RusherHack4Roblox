@@ -312,7 +312,7 @@ function lib:CreateWindow()
 	TabsFrame.BackgroundTransparency = 1.000
 	TabsFrame.BorderSizePixel = 0
 	TabsFrame.Position = UDim2.new(0.010, 0,0.010, 0)
-	TabsFrame.Size = UDim2.new(0, 207, 0, 40)
+	TabsFrame.Size = UDim2.new(0, 175, 0, 23)
 	TabsFrame.AutomaticSize = "X"
 	uilistthingy.Parent = TabsFrame
 	uilistthingy.FillDirection = Enum.FillDirection.Horizontal
@@ -346,7 +346,7 @@ function lib:CreateWindow()
 		tabname.BackgroundTransparency = 1.000
 		tabname.BorderSizePixel = 0
 		tabname.Position = UDim2.new(0, 203,0, 37)
-		tabname.Size = UDim2.new(0, 150, 0, 13)
+		tabname.Size = UDim2.new(0, 175, 0, 23)
 		tabname.Font = Enum.Font.SourceSans
 		tabname.Text = "       "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
