@@ -199,7 +199,7 @@ local function createnotification(title, text, delay2, toggled)
 		frame.Parent = ScreenGuitwo
 		frame.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
 		frame.Position = UDim2.new(0.78039217, 0, 0.828395069, 0)
-		frame.Size = UDim2.new(0, 100, 0, 30)
+		frame.Size = UDim2.new(0, 253, 0, 59)
 
 		frametitle.Parent = frame
 		frametitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -233,7 +233,7 @@ local function createnotification(title, text, delay2, toggled)
 		local textsize = game:GetService("TextService"):GetTextSize(frametitle.Text, frametitle.TextSize, frametitle.Font, Vector2.new(100000, 100000))
 		local textsize2 = game:GetService("TextService"):GetTextSize(frametext.Text, frametext.TextSize, frametext.Font, Vector2.new(100000, 100000))
 		if textsize2.X > textsize.X then textsize = textsize2 end
-		frame.Size = UDim2.new(0, textsize.X + 38, 0, 115)
+		frame.Size = UDim2.new(0, 253, 0, 59)
 		pcall(function()
 			frame:TweenPosition(UDim2.new(0.5, 0, 0, 20), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 0.15)
 			game:GetService("Debris"):AddItem(frame, delay2 + 0.15)
