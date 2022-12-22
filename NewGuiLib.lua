@@ -209,7 +209,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametitle.Font = Enum.Font.SourceSans
 		frametitle.Text = "RusherHack"
 		frametitle.TextColor3 = Color3.fromRGB(205, 190, 255)
-		frametitle.TextSize = 20.000
+		frametitle.TextSize = 16.000
 
 		frameborder.Parent = frame
 		frameborder.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
@@ -225,7 +225,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametext.Font = Enum.Font.SourceSans
 		frametext.Text = text
 		frametext.TextColor3 = Color3.fromRGB(205, 190, 255)
-		frametext.TextSize = 20.000
+		frametext.TextSize = 18.000
 		frametext.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 4)
@@ -240,7 +240,7 @@ local function createnotification(title, text, delay2, toggled)
 		end)
 	end)
 end
-createnotification("Loaded", "Press Right-Shift to toggle GUI", 3, true)
+createnotification("Loaded", "Loaded", 3, true)
 local function dragGUI(gui, dragpart)
 	spawn(function()
 		local dragging
