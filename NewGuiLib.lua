@@ -333,7 +333,7 @@ function lib:CreateWindow()
 		tab.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 		tab.BorderSizePixel = 0
 		tab.Position = UDim2.new(0,40,0.858895704, 0)
-		tab.Size = UDim2.new(0, 145, 0, 14)
+		tab.Size = UDim2.new(0, 220, 0, 28)
 		tab.Active=true
 		tab.LayoutOrder = 1 + #tabs
 		tab.AutoButtonColor = false
@@ -349,7 +349,7 @@ function lib:CreateWindow()
 		tabname.Font = Enum.Font.SourceSansLight
 		tabname.Text = " "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
-		tabname.TextSize = 14.000
+		tabname.TextSize = 17.000
 		tabname.TextWrapped = true
 		tabname.TextXAlignment = Enum.TextXAlignment.Left
 
