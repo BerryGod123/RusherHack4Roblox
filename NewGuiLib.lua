@@ -396,7 +396,7 @@ function lib:CreateWindow()
 			toggle.Name = "toggle_" .. title
 			toggle.Parent = tab
 			toggle.BackgroundColor3 = Color3.fromRGB(80, 79, 82)
-			toggle.BorderSizePixel = 0
+			toggle.BorderSizePixel = 2
 			toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
 			toggle.Size = UDim2.new(0, 175, 0, 26)
 			toggle.Text = ""
@@ -773,13 +773,13 @@ function lib:CreateWindow()
 				tognametwo.Position = UDim2.new(0.0911458358, 0, 0.502793312, 0)
 				tognametwo.Size = UDim2.new(0, 170, 0, 32)
 				tognametwo.Font = Enum.Font.SourceSansLight
-				tognametwo.TextColor3 = Color3.fromRGB(255, 255, 255)
+				tognametwo.TextColor3 = Color3.fromRGB(60, 0, 255)
 				tognametwo.TextSize = 22.000
 				tognametwo.TextXAlignment = Enum.TextXAlignment.Left
 				tognametwo.Text = argstable["Name"]
 				untoggled.Name = "untoggled"
 				untoggled.Parent = tognametwo
-				untoggled.BackgroundColor3 = Color3.fromRGB(66, 68, 66)
+				untoggled.BackgroundColor3 = Color3.fromRGB(80, 79, 82)
 				untoggled.BorderSizePixel = 0
 				untoggled.Position = UDim2.new(0.816739559, 0, 0.0743236542, 0)
 				untoggled.Size = UDim2.new(0, 29, 0, 29)
@@ -787,7 +787,7 @@ function lib:CreateWindow()
 				untoggled.AutoButtonColor = false
 				toggleactived.Name = "togthingylol"
 				toggleactived.Parent = tognametwo
-				toggleactived.BackgroundColor3 = Color3.fromRGB(66, 68, 66)
+				toggleactived.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 				toggleactived.BorderSizePixel = 0
 				toggleactived.Position = UDim2.new(0, 141, 0, 5)
 				toggleactived.Size = UDim2.new(0, 24, 0, 24)
