@@ -188,45 +188,45 @@ local Background
 local function createnotification(title, text, delay2, toggled)
 	spawn(function()
 		if ScreenGuitwo:FindFirstChild("Background") then ScreenGuitwo:FindFirstChild("Background"):Destroy() end
-		local Frame = Instance.new("Frame")
-		local TextLabel = Instance.new("TextLabel")
-		local Frame_2 = Instance.new("Frame")
-		local TextLabel_2 = Instance.new("TextLabel")
+		local frame = Instance.new("Frame")
+		local frametitle = Instance.new("TextLabel")
+		local frameborder = Instance.new("Frame")
+		local frametext =  Instance.new("TextLabel")
 		local UICorner = Instance.new("UICorner")
 
 		--Properties:
 
-		Frame.Parent = ScreenGuitwo
-		Frame.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
-		Frame.Position = UDim2.new(0.78039217, 0, 0.828395069, 0)
-		Frame.Size = UDim2.new(0, 253, 0, 59)
+		frame.Parent = ScreenGuitwo
+		frame.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+		frame.Position = UDim2.new(0.78039217, 0, 0.828395069, 0)
+		frame.Size = UDim2.new(0, 253, 0, 59)
 
-		TextLabel.Parent = Frame
-		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.BackgroundTransparency = 1.000
-		TextLabel.Position = UDim2.new(-0.181818187, 0, 0, 0)
-		TextLabel.Size = UDim2.new(0, 167, 0, 20)
-		TextLabel.Font = Enum.Font.SourceSans
-		TextLabel.Text = "RusherHack"
-		TextLabel.TextColor3 = Color3.fromRGB(205, 190, 255)
-		TextLabel.TextSize = 14.000
+		frametitle.Parent = Frame
+		frametitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		frametitle.BackgroundTransparency = 1.000
+		frametitle.Position = UDim2.new(-0.181818187, 0, 0, 0)
+		frametitle.Size = UDim2.new(0, 167, 0, 20)
+		frametitle.Font = Enum.Font.SourceSans
+		frametitle.Text = "RusherHack"
+		frametitle.TextColor3 = Color3.fromRGB(205, 190, 255)
+		frametitle.TextSize = 14.000
 
-		Frame_2.Parent = Frame
-		Frame_2.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
-		Frame_2.BorderSizePixel = 0
-		Frame_2.Position = UDim2.new(0, 0, 0.91129005, 0)
-		Frame_2.Size = UDim2.new(0, 253, 0, 5)
+		frameborder.Parent = Frame
+		frameborder.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+		frameborder.BorderSizePixel = 0
+		frameborder.Position = UDim2.new(0, 0, 0.91129005, 0)
+		frameborder.Size = UDim2.new(0, 253, 0, 5)
 
-		TextLabel_2.Parent = Frame
-		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_2.BackgroundTransparency = 1.000
-		TextLabel_2.Position = UDim2.new(0.0276679844, 0, 0.338983059, 0)
-		TextLabel_2.Size = UDim2.new(0, 246, 0, 27)
-		TextLabel_2.Font = Enum.Font.SourceSans
-		TextLabel_2.Text = "Notification"
-		TextLabel_2.TextColor3 = Color3.fromRGB(205, 190, 255)
-		TextLabel_2.TextSize = 23.000
-		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+		frametext.Parent = Frame
+		frametext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		frametext.BackgroundTransparency = 1.000
+		frametext.Position = UDim2.new(0.0276679844, 0, 0.338983059, 0)
+		frametext.Size = UDim2.new(0, 246, 0, 27)
+		frametext.Font = Enum.Font.SourceSans
+		frametext.Text = text
+		frametext.TextColor3 = Color3.fromRGB(205, 190, 255)
+		frametext.TextSize = 23.000
+		frametext.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 4)
 		UICorner.Parent = Frame
