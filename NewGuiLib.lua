@@ -347,10 +347,10 @@ function lib:CreateWindow()
 		tabname.BorderSizePixel = 0
 		tabname.Position = UDim2.new(0, 199,0, 37)
 		tabname.Size = UDim2.new(0, 145, 0, 13)
-		tabname.Font = Enum.Font.SourceSansBold
+		tabname.Font = Enum.Font.SourceSans
 		tabname.Text = "        "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
-		tabname.TextSize = 23.000
+		tabname.TextSize = 26.500
 		tabname.TextWrapped = true
 		tabname.TextXAlignment = Enum.TextXAlignment.Center
 
