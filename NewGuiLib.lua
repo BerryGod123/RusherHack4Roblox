@@ -201,7 +201,7 @@ local function createnotification(title, text, delay2, toggled)
 		frame.Position = UDim2.new(0.78039217, 0, 0.828395069, 0)
 		frame.Size = UDim2.new(0, 253, 0, 59)
 
-		frametitle.Parent = Frame
+		frametitle.Parent = frame
 		frametitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		frametitle.BackgroundTransparency = 1.000
 		frametitle.Position = UDim2.new(-0.181818187, 0, 0, 0)
@@ -211,13 +211,13 @@ local function createnotification(title, text, delay2, toggled)
 		frametitle.TextColor3 = Color3.fromRGB(205, 190, 255)
 		frametitle.TextSize = 14.000
 
-		frameborder.Parent = Frame
+		frameborder.Parent = frame
 		frameborder.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 		frameborder.BorderSizePixel = 0
 		frameborder.Position = UDim2.new(0, 0, 0.91129005, 0)
 		frameborder.Size = UDim2.new(0, 253, 0, 5)
 
-		frametext.Parent = Frame
+		frametext.Parent = frame
 		frametext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		frametext.BackgroundTransparency = 1.000
 		frametext.Position = UDim2.new(0.0276679844, 0, 0.338983059, 0)
@@ -229,7 +229,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametext.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 4)
-		UICorner.Parent = Frame
+		UICorner.Parent = frame
 		local textsize = game:GetService("TextService"):GetTextSize(frametitle.Text, frametitle.TextSize, frametitle.Font, Vector2.new(100000, 100000))
 		local textsize2 = game:GetService("TextService"):GetTextSize(frametext.Text, frametext.TextSize, frametext.Font, Vector2.new(100000, 100000))
 		if textsize2.X > textsize.X then textsize = textsize2 end
