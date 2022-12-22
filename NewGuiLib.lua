@@ -197,7 +197,7 @@ local function createnotification(title, text, delay2, toggled)
 		--Properties:
 
 		frame.Parent = ScreenGuitwo
-		frame.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+		frame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 		frame.Position = UDim2.new(0, 0, 0, 0)
 		frame.Size = UDim2.new(0, 253, 0, 59)
 
