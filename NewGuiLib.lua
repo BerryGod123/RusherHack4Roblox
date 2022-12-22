@@ -235,7 +235,7 @@ local function createnotification(title, text, delay2, toggled)
 		if textsize2.X > textsize.X then textsize = textsize2 end
 		frame.Size = UDim2.new(0, 253, 0, 59)
 		pcall(function()
-			frame:TweenPosition(UDim2.new(0.5, 0, 0, 20), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 0.15)
+			frame:TweenPosition(UDim2.new(0.78039217, 0, 0.828395069, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 0.15)
 			game:GetService("Debris"):AddItem(frame, delay2 + 0.15)
 		end)
 	end)
