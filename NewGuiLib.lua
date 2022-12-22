@@ -191,7 +191,7 @@ local function createnotification(title, text, delay2, toggled)
 		local frame = Instance.new("Frame")
 		local frametitle = Instance.new("TextLabel")
 		local frameborder = Instance.new("Frame")
-		local frametext =  Instance.new("TextLabel")
+		local frametext = Instance.new("TextLabel")
 		local UICorner = Instance.new("UICorner")
 
 		--Properties:
