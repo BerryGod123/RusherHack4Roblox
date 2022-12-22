@@ -214,7 +214,7 @@ local function createnotification(title, text, delay2, toggled)
 		frameborder.Parent = frame
 		frameborder.BackgroundColor3 = Color3.fromRGB(64, 40, 201)
 		frameborder.BorderSizePixel = 0
-		frameborder.Position = UDim2.new(0, 0, 0.91129005, 0)
+		frameborder.Position = UDim2.new(0, 0, 0.91429005, 0)
 		frameborder.Size = UDim2.new(0, 253, 0, 5)
 
 		frametext.Parent = frame
