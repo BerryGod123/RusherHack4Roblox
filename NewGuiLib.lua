@@ -212,7 +212,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametitle.TextSize = 16.000
 
 		frameborder.Parent = frame
-		frameborder.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+		frameborder.BackgroundColor3 = Color3.fromRGB(105, 74, 176)
 		frameborder.BorderSizePixel = 0
 		frameborder.Position = UDim2.new(0, 0, 0.91129005, 0)
 		frameborder.Size = UDim2.new(0, 253, 0, 5)
@@ -331,7 +331,8 @@ function lib:CreateWindow()
 		tab.Text = " "
 		tab.ZIndex = 1
 		tab.Parent = TabsFrame
-		tab.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+		tab.BackgroundColor3 = Color3.fromRGB(105, 74, 176)
+		tab.BackgroundTransparency = 0.200
 		tab.BorderSizePixel = 2
 		tab.Position = UDim2.new(0,40,0.858895704, 0)
 		tab.Size = UDim2.new(0, 175, 0, 23)
@@ -395,6 +396,7 @@ function lib:CreateWindow()
 			local togname_2 = Instance.new("TextLabel")
 			toggle.Name = "toggle_" .. title
 			toggle.Parent = tab
+			toggle.BackgroundTransparency = 0.200
 			toggle.BackgroundColor3 = Color3.fromRGB(80, 79, 82)
 			toggle.BorderSizePixel = 2
 			toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
@@ -529,7 +531,7 @@ function lib:CreateWindow()
 						createnotification(title, "Enabled "..title, 4, true)
 						configtable[title]["IsToggled"] = true
 					end)
-					toggle.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+					toggle.BackgroundColor3 = Color3.fromRGB(105, 74, 176)
 					playdingsound(true)
 				end
 			end
@@ -562,7 +564,7 @@ function lib:CreateWindow()
 							callback(true)
 						end)
 						configtable[title]["IsToggled"] = true
-						toggle.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+						toggle.BackgroundColor3 = Color3.fromRGB(105, 74, 176)
 					end
 				end
 			end
@@ -773,7 +775,7 @@ function lib:CreateWindow()
 				tognametwo.Position = UDim2.new(0.0911458358, 0, 0.502793312, 0)
 				tognametwo.Size = UDim2.new(0, 170, 0, 32)
 				tognametwo.Font = Enum.Font.SourceSansLight
-				tognametwo.TextColor3 = Color3.fromRGB(60, 0, 255)
+				tognametwo.TextColor3 = Color3.fromRGB(105, 74, 176)
 				tognametwo.TextSize = 22.000
 				tognametwo.TextXAlignment = Enum.TextXAlignment.Left
 				tognametwo.Text = argstable["Name"]
@@ -787,7 +789,7 @@ function lib:CreateWindow()
 				untoggled.AutoButtonColor = false
 				toggleactived.Name = "togthingylol"
 				toggleactived.Parent = tognametwo
-				toggleactived.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+				toggleactived.BackgroundColor3 = Color3.fromRGB(105, 74, 176)
 				toggleactived.BorderSizePixel = 0
 				toggleactived.Position = UDim2.new(0, 141, 0, 5)
 				toggleactived.Size = UDim2.new(0, 24, 0, 24)
