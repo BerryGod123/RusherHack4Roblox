@@ -199,7 +199,7 @@ local function createnotification(title, text, delay2, toggled)
 		frame.Parent = ScreenGuitwo
 		frame.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
 		frame.Position = UDim2.new(0.78039217, 0, 0.828395069, 0)
-		frame.Size = UDim2.new(0, 220, 0, 47)
+		frame.Size = UDim2.new(0, 100, 0, 30)
 
 		frametitle.Parent = frame
 		frametitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -209,7 +209,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametitle.Font = Enum.Font.SourceSans
 		frametitle.Text = "RusherHack"
 		frametitle.TextColor3 = Color3.fromRGB(205, 190, 255)
-		frametitle.TextSize = 14.000
+		frametitle.TextSize = 20.000
 
 		frameborder.Parent = frame
 		frameborder.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
@@ -225,7 +225,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametext.Font = Enum.Font.SourceSans
 		frametext.Text = text
 		frametext.TextColor3 = Color3.fromRGB(205, 190, 255)
-		frametext.TextSize = 23.000
+		frametext.TextSize = 25.000
 		frametext.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 4)
