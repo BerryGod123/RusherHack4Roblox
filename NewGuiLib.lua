@@ -413,7 +413,6 @@ function lib:CreateWindow()
 			togname.TextSize = 22.000
 			togname.TextWrapped = true
 			togname.TextXAlignment = Enum.TextXAlignment.Left
-			togname.TextYAlignment = Enum.TextXAlignment.Center
 			local optionselement = {
 				["Stuff"] = {}
 			}
