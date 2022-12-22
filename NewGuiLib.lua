@@ -423,7 +423,7 @@ function lib:CreateWindow()
 			local optionframe = Instance.new("Frame")
 			optionframe.Name = "optionframe"
 			optionframe.Parent = tab
-			optionframe.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
+			optionframe.BackgroundColor3 = Color3.fromRGB(80, 79, 82)
 			optionframe.Position = UDim2.new(0.102424242, 0, 0.237059206, 0)
 			optionframe.Size = UDim2.new(0, 175, 0, 26)
 			optionframe.AutomaticSize = "Y"
@@ -439,7 +439,7 @@ function lib:CreateWindow()
 			BindText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			BindText.BackgroundTransparency = 1.000
 			BindText.Position = UDim2.new(0.0989583358, 0, 0, 0)
-			BindText.Size = UDim2.new(0, 175, 0, 26)
+			BindText.Size = UDim2.new(0, 173, 0, 23)
 			BindText.Font = Enum.Font.SourceSansLight
 			BindText.Text = "Bind: none"
 			BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
