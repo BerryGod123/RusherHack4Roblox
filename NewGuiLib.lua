@@ -347,7 +347,7 @@ function lib:CreateWindow()
 		tabname.BackgroundTransparency = 1.000
 		tabname.BorderSizePixel = 0
 		tabname.Position = UDim2.new(0, 203,0, 37)
-		tabname.Size = UDim2.new(0, 175, 0, 23)
+		tabname.Size = UDim2.new(0, 175, 0, 23) --173, 0, 23
 		tabname.Font = Enum.Font.SourceSans
 		tabname.Text = " "..title
 		tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -439,7 +439,7 @@ function lib:CreateWindow()
 			BindText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			BindText.BackgroundTransparency = 1.000
 			BindText.Position = UDim2.new(0.0989583358, 0, 0, 0)
-			BindText.Size = UDim2.new(0, 173, 0, 23)
+			BindText.Size = UDim2.new(0, 175, 0, 26)
 			BindText.Font = Enum.Font.SourceSansLight
 			BindText.Text = "Bind: none"
 			BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -594,8 +594,8 @@ function lib:CreateWindow()
 				local slider_2 = Instance.new("Frame")
 				slider.Name = "slider"
 				slider.Parent = optionframe
-				slider.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
-				slider.BorderSizePixel = 0
+				slider.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
+				slider.BorderSizePixel = 2
 				slider.Position = UDim2.new(0.0833333358, 0, 0.109391868, 0)
 				slider.Size = UDim2.new(0, 175, 0, 26)
 				slider.Text = ""
@@ -604,7 +604,7 @@ function lib:CreateWindow()
 				slidertext.Parent = slider
 				slidertext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				slidertext.BackgroundTransparency = 1.000
-				slidertext.BorderSizePixel = 0
+				slidertext.BorderSizePixel = 2
 				slidertext.Position = UDim2.new(0.0188679248, 0, 0, 0)
 				slidertext.Size = UDim2.new(0, 180, 0, 33)
 				slidertext.ZIndex = 3
@@ -616,7 +616,7 @@ function lib:CreateWindow()
 				slider_2.Name = "slider"
 				slider_2.Parent = slider
 				slider_2.BackgroundColor3 = color
-				slider_2.BorderSizePixel = 0
+				slider_2.BorderSizePixel = 2
 				slider_2.Position = UDim2.new(0.00786163565, 0, -0.00825500488, 0)
 				slider_2.Size = UDim2.new(0, 175, 0, 26)
 				slider_2.ZIndex = 2
@@ -707,7 +707,7 @@ function lib:CreateWindow()
 				Dropdown.Parent = optionframe
 				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Dropdown.BackgroundTransparency = 1.000
-				Dropdown.BorderSizePixel = 0
+				Dropdown.BorderSizePixel = 2
 				Dropdown.Position = UDim2.new(0.0859375, 0, 0.491620123, 0)
 				Dropdown.Size = UDim2.new(0, 175, 0, 26)
 				Dropdown.Font = Enum.Font.SourceSansLight
