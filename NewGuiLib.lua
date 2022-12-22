@@ -225,7 +225,7 @@ local function createnotification(title, text, delay2, toggled)
 		frametext.Font = Enum.Font.SourceSans
 		frametext.Text = text
 		frametext.TextColor3 = Color3.fromRGB(205, 190, 255)
-		frametext.TextSize = 25.000
+		frametext.TextSize = 20.000
 		frametext.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 4)
