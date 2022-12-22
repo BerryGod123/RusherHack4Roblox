@@ -425,7 +425,7 @@ function lib:CreateWindow()
 			optionframe.Parent = tab
 			optionframe.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
 			optionframe.Position = UDim2.new(0.102424242, 0, 0.237059206, 0)
-			optionframe.Size = UDim2.new(0, 207, 0, 0)
+			optionframe.Size = UDim2.new(0, 175, 0, 26)
 			optionframe.AutomaticSize = "Y"
 			optionframe.Visible = false
 			local UIListLayout = Instance.new("UIListLayout")
@@ -439,7 +439,7 @@ function lib:CreateWindow()
 			BindText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			BindText.BackgroundTransparency = 1.000
 			BindText.Position = UDim2.new(0.0989583358, 0, 0, 0)
-			BindText.Size = UDim2.new(0, 175, 0, 33)
+			BindText.Size = UDim2.new(0, 175, 0, 26)
 			BindText.Font = Enum.Font.SourceSansLight
 			BindText.Text = "Bind: none"
 			BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -597,7 +597,7 @@ function lib:CreateWindow()
 				slider.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
 				slider.BorderSizePixel = 0
 				slider.Position = UDim2.new(0.0833333358, 0, 0.109391868, 0)
-				slider.Size = UDim2.new(0, 180, 0, 34)
+				slider.Size = UDim2.new(0, 175, 0, 26)
 				slider.Text = ""
 				slider.AutoButtonColor = false
 				slidertext.Name = "slidertext"
@@ -618,7 +618,7 @@ function lib:CreateWindow()
 				slider_2.BackgroundColor3 = color
 				slider_2.BorderSizePixel = 0
 				slider_2.Position = UDim2.new(0.00786163565, 0, -0.00825500488, 0)
-				slider_2.Size = UDim2.new(0, 0, 0, 34)
+				slider_2.Size = UDim2.new(0, 175, 0, 26)
 				slider_2.ZIndex = 2
 				local mouse = game.Players.LocalPlayer:GetMouse()
 				if configtable[argstable["Name"]..sussyamog["Name"].."_SR"] == nil then
@@ -709,7 +709,7 @@ function lib:CreateWindow()
 				Dropdown.BackgroundTransparency = 1.000
 				Dropdown.BorderSizePixel = 0
 				Dropdown.Position = UDim2.new(0.0859375, 0, 0.491620123, 0)
-				Dropdown.Size = UDim2.new(0, 175, 0, 25)
+				Dropdown.Size = UDim2.new(0, 175, 0, 26)
 				Dropdown.Font = Enum.Font.SourceSansLight
 				Dropdown.Text = "Mode: "..argstable.Default
 				Dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -773,7 +773,7 @@ function lib:CreateWindow()
 				tognametwo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				tognametwo.BackgroundTransparency = 1.000
 				tognametwo.Position = UDim2.new(0.0911458358, 0, 0.502793312, 0)
-				tognametwo.Size = UDim2.new(0, 170, 0, 32)
+				tognametwo.Size = UDim2.new(0, 175, 0, 26)
 				tognametwo.Font = Enum.Font.SourceSansLight
 				tognametwo.TextColor3 = Color3.fromRGB(64, 40, 201)
 				tognametwo.TextSize = 22.000
