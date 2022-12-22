@@ -519,7 +519,7 @@ function lib:CreateWindow()
 						createnotification(title, "Disabled "..title, 4, false)
 						configtable[title]["IsToggled"] = false
 					end)
-					toggle.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
+					toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
 					playdingsound(false)
 				else
 					spawn(function()
@@ -529,7 +529,7 @@ function lib:CreateWindow()
 						createnotification(title, "Enabled "..title, 4, true)
 						configtable[title]["IsToggled"] = true
 					end)
-					toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
+					toggle.BackgroundColor3 = Color3.fromRGB(60, 0, 255)
 					playdingsound(true)
 				end
 			end
