@@ -1,4 +1,4 @@
--- The base gui lib is from RusherHack lol
+-- The base gui lib is from rektky lol
 
 repeat task.wait() until game:IsLoaded()
 
