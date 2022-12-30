@@ -1,5 +1,5 @@
 -- The base gui lib is from rektky lol
-
+array = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ln3242/Feather-Client/main/ArrayList.lua"))()
 repeat task.wait() until game:IsLoaded()
 
 local lib = {
@@ -518,6 +518,9 @@ function lib:CreateWindow()
 						callback(false)
 					end)
 					spawn(function()
+                        			array.Remove(data["Name"])
+                    			end)
+					spawn(function()
 						createnotification(title, "Disabled "..title, 4, false)
 						configtable[title]["IsToggled"] = false
 					end)
@@ -527,6 +530,9 @@ function lib:CreateWindow()
 					spawn(function()
 						callback(true)
 					end)
+					spawn(function()
+                        			array.Add(data["Name"])
+                    			end)
 					spawn(function()
 						createnotification(title, "Enabled "..title, 4, true)
 						configtable[title]["IsToggled"] = true
@@ -556,6 +562,9 @@ function lib:CreateWindow()
 					spawn(function()
 						callback(false)
 					end)
+					spawn(function()
+                        			array.Remove(data["Name"])
+                    			end)
 					configtable[title]["IsToggled"] = false
 					toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
 				else
@@ -563,6 +572,9 @@ function lib:CreateWindow()
 						spawn(function()
 							callback(true)
 						end)
+                        		spawn(function()
+                            			array.Add(data["Name"])
+                        		end)
 						configtable[title]["IsToggled"] = true
 						toggle.BackgroundColor3 = Color3.fromRGB(64, 40, 201)
 					end
