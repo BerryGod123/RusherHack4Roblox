@@ -19,7 +19,7 @@ Arraylist = {
             newName = Name
         end
         Text.Name = Name
-        Text.BackgroundTransparency = 0
+        Text.BackgroundTransparency = 1
         Text.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
         Text.Size = UDim2.new(0,0,1,0)
         Text.Font = Enum.Font.Gotham
