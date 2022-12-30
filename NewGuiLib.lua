@@ -1,5 +1,5 @@
 -- The base gui lib is from rektky lol
-array = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ln3242/Feather-Client/main/ArrayList.lua"))()
+array = loadstring(game:HttpGet("https://raw.githubusercontent.com/BerryGod123/RusherHack4Roblox/main/Arraylist.lua"))()
 repeat task.wait() until game:IsLoaded()
 
 local lib = {
