@@ -1,56 +1,3 @@
-function rainbow()
-    local add = 10
-    wait(1)
-    local k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(k/255,0/255,0/255)
-    k = k + add
-    wait()
-    end
-    while true do
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255,k/255,0/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(0/255,255/255,k/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(k/255,0/255,255/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-    k = k + add
-    wait()
-    end
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-    k = k + add
-    wait()
-    end
-    end
-end
 
 local array = Instance.new("ScreenGui", game:GetService("CoreGui"))
 local arrayFrame = Instance.new("Frame", array)
@@ -93,7 +40,7 @@ Arraylist = {
         task.spawn(function()
             repeat
                 task.wait()
-                Text.TextColor3 = rainbow()
+                Text.TextColor3 = Color3.fromHSV(tick() * 24 % 255/255, 1, 1)
             until not Text
         end)
     end,
