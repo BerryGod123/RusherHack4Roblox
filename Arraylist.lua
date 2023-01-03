@@ -10,11 +10,7 @@ Grid.SortOrder = Enum.SortOrder.LayoutOrder
 Grid.CellSize = UDim2.new(1, 0, 0.0275, 0)
 Grid.HorizontalAlignment = "Left"
 
-task.spawn(function()
-    while task.wait(1) do
-        array.Enabled = shared["CometConfigs"].Enabled
-     end
-end)
+
 
 Arraylist = {
     Add = function(Name,Suffix)
