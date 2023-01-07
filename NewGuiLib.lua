@@ -10,33 +10,33 @@ local lib = {
     ["Objects"] = {}
 }
 
-if isfolder("rektsky") == false then
-    makefolder("rektsky")
+if isfolder("OverFlux") == false then
+    makefolder("OverFlux")
 end
 
-if isfolder("rektsky/sound") == false then
-    makefolder("rektsky/sound")
+if isfolder("OverFlux/sound") == false then
+    makefolder("OverFlux/sound")
 end
 
-if isfolder("rektsky/sound/mc") == false then
-    makefolder("rektsky/sound/mc")
+if isfolder("OverFlux/sound/mc") == false then
+    makefolder("OverFlux/sound/mc")
 end
 
-if isfolder("rektsky/assets") == false then
-    makefolder("rektsky/assets")
+if isfolder("OverFlux/assets") == false then
+    makefolder("OverFlux/assets")
 end
 
-if isfolder("rektsky/config") == false then
-    makefolder("rektsky/config")
+if isfolder("OverFlux/config") == false then
+    makefolder("OverFlux/config")
 end
 
-if isfolder("rektsky/scripts") == false then
-    makefolder("rektsky/scripts")
+if isfolder("OverFlux/scripts") == false then
+    makefolder("OverFlux/scripts")
 end
 
 local sliderapi = {}
 
-local foldername = "rektsky/config"
+local foldername = "OverFlux/config"
 local conf = {
 	["file"]=foldername.."/"..game.PlaceId..".json",
 	["functions"]={}
@@ -85,7 +85,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local ScreenGuitwo = Instance.new("ScreenGui")
 ScreenGuitwo.Parent = game:WaitForChild("CoreGui")
 ScreenGuitwo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGuitwo.Name = "RektskyNotificationGui"
+ScreenGuitwo.Name = "OverFluxNotificationGui"
 local getasset = getsynasset or getcustomasset
 
 local requestfunc = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request or function(tab)
@@ -127,7 +127,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("rektsky/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("OverFlux/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -156,7 +156,7 @@ local function getcustomassetfuncforsounds(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("rektsky/sound", "sound"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("OverFlux/sound", "sound"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -288,9 +288,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("rektsky/sound/enable.mp3") or getasset("rektsky/sound/enable.mp3"))
+            playsound(getcustomassetfuncforsounds("OverFlux/sound/enable.mp3") or getasset("OverFlux/sound/enable.mp3"))
         else
-            playsound(getcustomassetfuncforsounds("rektsky/sound/disable.mp3") or getasset("rektsky/sound/disable.mp3"))
+            playsound(getcustomassetfuncforsounds("OverFlux/sound/disable.mp3") or getasset("OverFlux/sound/disable.mp3"))
         end
     end
 end
@@ -354,7 +354,7 @@ function lib:CreateWindow()
         assetthing.BackgroundTransparency = 1
         assetthing.Position = UDim2.new(0.86, 0,0.154, 0)
         assetthing.Size = UDim2.new(0, 30, 0, 30)
-        assetthing.Image = getcustomassetfunc("rektsky/assets/" .. asset .. ".png") or getasset("rektsky/assets/" .. asset .. ".png")
+        assetthing.Image = getcustomassetfunc("OverFlux/assets/" .. asset .. ".png") or getasset("OverFlux/assets/" .. asset .. ".png")
         local tabtable = {
             ["Toggles"]={}
         }
@@ -727,7 +727,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!,")
-                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/rektsky/config\nand delete everything inside of that folder", 10, false)
+                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/OverFlux/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
 
@@ -738,7 +738,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!")
-                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/rektsky/config\nand delete everything inside of that folder", 10, false)
+                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/OverFlux/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
     			if configtable[ddname] and configtable[ddname]["Value"] then
