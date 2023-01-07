@@ -4,6 +4,7 @@ local arrayFrame = Instance.new("Frame", array)
 arrayFrame.Size = UDim2.new(0.13, 0, 1, 0)
 arrayFrame.Position = UDim2.new(0.87, 0, 0, 0)
 arrayFrame.BackgroundTransparency = 1
+arrayFrame.AutomaticSize = "X"
 local Grid = Instance.new("UIGridLayout",arrayFrame)
 Grid.CellPadding = UDim2.new(0, 0, 0.0001, 0)
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
