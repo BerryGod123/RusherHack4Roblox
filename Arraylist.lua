@@ -1,9 +1,9 @@
-
 local array = Instance.new("ScreenGui", game:GetService("CoreGui"))
 local arrayFrame = Instance.new("Frame", array)
 arrayFrame.Size = UDim2.new(0.13, 0, 1, 0)
 arrayFrame.Position = UDim2.new(0.87, 0, 0, 0)
-arrayFrame.BackgroundTransparency = 1
+arrayFrame.BackgroundTransparency = 0.6
+arrayFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 arrayFrame.AutomaticSize = "X"
 local Grid = Instance.new("UIGridLayout",arrayFrame)
 Grid.CellPadding = UDim2.new(0, 0, 0.0001, 0)
@@ -18,7 +18,7 @@ Arraylist = {
         local Text = Instance.new("TextLabel",arrayFrame)
         local newName
         if Suffix then
-			newName = Name.." {" ..Suffix .. "}"
+			newName = Name.." | " ..Suffix
         else
             newName = Name
         end
@@ -32,12 +32,12 @@ Arraylist = {
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
-	    Text.TextColor3 = Color3.new(59/255, 170/255, 222/255)
+	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	    Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
                 task.wait()
-                Text.TextColor3 = Color3.fromHSV(tick() * 24 % 255/255, 1, 1)
+                Text.TextColor3 = Color3.fromRGB(170, 0, 255)
             until not Text
         end)
     end,
