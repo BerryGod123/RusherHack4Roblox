@@ -1,4 +1,4 @@
--- Credits to rektsky for the base ui lib
+
 repeat task.wait() until game:IsLoaded()
 
 local lib = {
@@ -305,7 +305,7 @@ function lib:CreateWindow()
     TabsFrame.BackgroundTransparency = 1.000
     TabsFrame.BorderSizePixel = 0
     TabsFrame.Position = UDim2.new(0.010, 0,0.010, 0)
-    TabsFrame.Size = UDim2.new(0, 220, 0, 40)
+    TabsFrame.Size = UDim2.new(0, 235, 0, 28)
     TabsFrame.AutomaticSize = "X"
     uilistthingy.Parent = TabsFrame
     uilistthingy.FillDirection = Enum.FillDirection.Horizontal
@@ -327,7 +327,7 @@ function lib:CreateWindow()
         tab.BorderSizePixel = 1
         tab.Position = UDim2.new(0,40,0.858895704, 0)
         tab.BorderColor3 = Color3.fromRGB(170, 0, 255)
-        tab.Size = UDim2.new(0, 220, 0, 40)
+        tab.Size = UDim2.new(0, 235, 0, 28)
         tab.Active=true
         tab.AutomaticSize = "Y"
         tab.LayoutOrder = 1 + #tabs
@@ -341,7 +341,7 @@ function lib:CreateWindow()
         tabname.BorderSizePixel = 1
         tabname.BorderColor3 = Color3.fromRGB(170, 0, 255)
         tabname.Position = UDim2.new(0, 199,0, 40)
-        tabname.Size = UDim2.new(0, 220, 0, 40)
+        tabname.Size = UDim2.new(0, 235, 0, 28)
         tabname.Font = Enum.Font.SourceSansLight
         tabname.Text = " "..title
         tabname.TextColor3 = color
@@ -392,7 +392,7 @@ function lib:CreateWindow()
             toggle.BackgroundColor3 = Color3.fromRGB(55,55,55)
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
-            toggle.Size = UDim2.new(0, 220, 0, 40)
+            toggle.Size = UDim2.new(0, 235, 0, 28)
             toggle.Text = ""
             togname.Name = "toggle_" .. title .. "234"
             togname.Parent = toggle
@@ -419,7 +419,7 @@ function lib:CreateWindow()
                 optionframe.BackgroundColor3 = Color3.fromRGB(55,55,55)
                 optionframe.BorderSizePixel = 1
                 optionframe.Position = UDim2.new(0.102424242, 0, 0.237059206, 0)
-                optionframe.Size = UDim2.new(0, 220, 0, 0)
+                optionframe.Size = UDim2.new(0, 235, 0, 0)
                 optionframe.AutomaticSize = "Y"
                 optionframe.Visible = false
                 local UIListLayout = Instance.new("UIListLayout")
