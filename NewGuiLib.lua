@@ -344,7 +344,7 @@ function lib:CreateWindow()
         tabname.Size = UDim2.new(0, 235, 0, 28)
         tabname.Font = Enum.Font.SourceSansLight
         tabname.Text = " "..title
-        tabname.TextColor3 = color
+        tabname.TextColor3 = Color3.fromRGB(0, 0, 0)
         tabname.TextSize = 22.000
         tabname.TextWrapped = true
         tabname.TextXAlignment = Enum.TextXAlignment.Left
