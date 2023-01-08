@@ -525,7 +525,7 @@ function lib:CreateWindow()
                         createnotification(title, "Enabled "..title, 4, true)
                         configtable[title]["IsToggled"] = true
                     end)
-                    toggle.BackgroundColor3 = tabname.TextColor3
+                    toggle.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
                     playdingsound(true)
                 end
             end
@@ -558,7 +558,7 @@ function lib:CreateWindow()
                             callback(true)
                         end)
                         configtable[title]["IsToggled"] = true
-                        toggle.BackgroundColor3 = tabname.TextColor3
+                        toggle.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
                     end
                 end
             end
@@ -805,7 +805,7 @@ function lib:CreateWindow()
                         spawn(function()
                             argstable["Func"](true)
                         end)
-                        toggleactived.BackgroundColor3 = tabname.TextColor3
+                        toggleactived.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
                     end
                 end
                 if configtable[argstable["Name"]..sussyamog["Name"].."_OT"] then
