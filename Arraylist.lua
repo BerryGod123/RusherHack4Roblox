@@ -26,7 +26,6 @@ Arraylist = {
         Text.BackgroundTransparency = 0.8
         Text.Font = Enum.Font.Gotham
 	Text.AutomaticSize = "X"
-	Text.Size = UDim2.new(0,0,1,0)
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.Text = newName.." "
