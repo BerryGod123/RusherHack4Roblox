@@ -24,8 +24,9 @@ Arraylist = {
         end
         Text.Name = Name
         Text.BackgroundTransparency = 0.8
-        Text.Size = UDim2.new(0,0,1,0)
         Text.Font = Enum.Font.Gotham
+	Text.AutomaticSize = "X"
+	Text.Size = UDim2.new(0,0,1,0)
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.Text = newName.." "
@@ -33,9 +34,9 @@ Arraylist = {
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
-        Text.AutomaticSize = "X"
-	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
-	    Text.TextStrokeTransparency = 0
+        
+	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
+	Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
                 task.wait()
