@@ -23,7 +23,7 @@ Arraylist = {
             newName = Name
         end
         Text.Name = Name
-        Text.BackgroundTransparency = 0.8
+        Text.BackgroundTransparency = 1
         Text.Font = Enum.Font.Gotham
 	Text.AutomaticSize = "X"
         local TextScale = Text.AbsoluteSize.Y * 0.7
