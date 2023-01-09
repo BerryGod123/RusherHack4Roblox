@@ -115,33 +115,33 @@ local function FPDIXB_fake_script() -- TextLabel_2.LocalScript
 end
 coroutine.wrap(FPDIXB_fake_script)()
 
-if isfolder("OverFlux") == false then
-    makefolder("OverFlux")
+if isfolder("VoidClient") == false then
+    makefolder("VoidClient")
 end
 
-if isfolder("OverFlux/sound") == false then
-    makefolder("OverFlux/sound")
+if isfolder("VoidClient/sound") == false then
+    makefolder("VoidClient/sound")
 end
 
-if isfolder("OverFlux/sound/mc") == false then
-    makefolder("OverFlux/sound/mc")
+if isfolder("VoidClient/sound/mc") == false then
+    makefolder("VoidClient/sound/mc")
 end
 
-if isfolder("OverFlux/assets") == false then
-    makefolder("OverFlux/assets")
+if isfolder("VoidClient/assets") == false then
+    makefolder("VoidClient/assets")
 end
 
-if isfolder("OverFlux/config") == false then
-    makefolder("OverFlux/config")
+if isfolder("VoidClient/config") == false then
+    makefolder("VoidClient/config")
 end
 
-if isfolder("OverFlux/scripts") == false then
-    makefolder("OverFlux/scripts")
+if isfolder("VoidClient/scripts") == false then
+    makefolder("VoidClient/scripts")
 end
 
 local sliderapi = {}
 
-local foldername = "OverFlux/config"
+local foldername = "VoidClient/config"
 local conf = {
 	["file"]=foldername.."/"..game.PlaceId..".json",
 	["functions"]={}
@@ -190,7 +190,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local ScreenGuitwo = Instance.new("ScreenGui")
 ScreenGuitwo.Parent = game:WaitForChild("CoreGui")
 ScreenGuitwo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGuitwo.Name = "OverFluxNotificationGui"
+ScreenGuitwo.Name = "VoidClientNotificationGui"
 local getasset = getsynasset or getcustomasset
 
 local requestfunc = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request or function(tab)
@@ -232,7 +232,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("OverFlux/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("VoidClient/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -261,7 +261,7 @@ local function getcustomassetfuncforsounds(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("OverFlux/sound", "sound"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("VoidClient/sound", "sound"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -393,9 +393,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("OverFlux/sound/enable.mp3") or getasset("OverFlux/sound/enable.mp3"))
+            playsound(getcustomassetfuncforsounds("VoidClient/sound/enable.mp3") or getasset("VoidClient/sound/enable.mp3"))
         else
-            playsound(getcustomassetfuncforsounds("OverFlux/sound/disable.mp3") or getasset("OverFlux/sound/disable.mp3"))
+            playsound(getcustomassetfuncforsounds("VoidClient/sound/disable.mp3") or getasset("VoidClient/sound/disable.mp3"))
         end
     end
 end
@@ -459,7 +459,7 @@ function lib:CreateWindow()
         assetthing.BackgroundTransparency = 1
         assetthing.Position = UDim2.new(0.86, 0,0.154, 0)
         assetthing.Size = UDim2.new(0, 30, 0, 30)
-        assetthing.Image = getcustomassetfunc("OverFlux/assets/" .. asset .. ".png") or getasset("OverFlux/assets/" .. asset .. ".png")
+        assetthing.Image = getcustomassetfunc("VoidClient/assets/" .. asset .. ".png") or getasset("VoidClient/assets/" .. asset .. ".png")
         local tabtable = {
             ["Toggles"]={}
         }
@@ -832,7 +832,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!,")
-                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/OverFlux/config\nand delete everything inside of that folder", 10, false)
+                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/VoidClient/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
 
@@ -843,7 +843,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!")
-                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/OverFlux/config\nand delete everything inside of that folder", 10, false)
+                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/VoidClient/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
     			if configtable[ddname] and configtable[ddname]["Value"] then
