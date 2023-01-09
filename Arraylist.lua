@@ -44,9 +44,9 @@ Arraylist = {
 		Color3.fromRGB(187,68,240); 
 		Color3.fromRGB(209,106,255)} 
 	local tweeninfoanim = TweenInfo.new(0.3, Enum.EasingStyle.Vertical, Enum.EasingDirection.InOut, 0, false, 0) 
-	script.Parent.TextColor3 = r[1] nigga = 1 
+	Text.TextColor3 = r[1] nigga = 1 
 	while true do 
-		local tween = game:GetService("TweenService"):Create(script.Parent, tweeninfoanim, { TextColor3 = rasicm[i]}) 
+		local tween = game:GetService("TweenService"):Create(Text, tweeninfoanim, { TextColor3 = rasicm[i]}) 
 		tween:Play() repeat wait() until tween.Completed wait(0.1) 
 		if nigga == #rasicm then 
 			nigga = 1 
