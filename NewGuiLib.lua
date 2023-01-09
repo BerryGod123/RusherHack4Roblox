@@ -9,6 +9,111 @@ local lib = {
     ["IsDraggable"] = true,
     ["Objects"] = {}
 }
+local nyaminyami = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+nyaminyami.Name = "nyaminyami"
+nyaminyami.Parent = game:GetService("CoreGui")
+nyaminyami.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = nyaminyami
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.000253178179, 0, -0.000804536045, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "VOID"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 57.000
+
+Frame.Parent = nyaminyami
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0154773518, 0, 0.0617283955, 0)
+Frame.Size = UDim2.new(0, 157, 0, 2)
+
+TextLabel_2.Parent = nyaminyami
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.000103577971, 0, 0.0498127565, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "VOID 0.8 | User: Nan"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 16.000
+
+-- Scripts:
+
+local function QDSZZL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local r = { Color3.fromRGB(209,106,255);
+		Color3.fromRGB(187,68,240); 
+		Color3.fromRGB(150,20,208);
+		Color3.fromRGB(102,0,148); 
+		Color3.fromRGB(150,20,208); 
+		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
+	script.Parent.TextColor3 = r[1] i = 1 
+	while true do 
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, { TextColor3 = r[i]}) 
+		tween:Play() repeat wait() until tween.Completed wait(0.1) 
+		if i == #r then 
+			i = 1 
+		else 
+			i = i + 1 
+		end 
+	end
+end
+coroutine.wrap(QDSZZL_fake_script)()
+local function FBRORD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	local r = { Color3.fromRGB(209,106,255);
+		Color3.fromRGB(187,68,240); 
+		Color3.fromRGB(150,20,208);
+		Color3.fromRGB(102,0,148); 
+		Color3.fromRGB(150,20,208); 
+		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
+	script.Parent.BackgroundColor3 = r[1] i = 1 
+	while true do 
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, { BackgroundColor3 = r[i]}) 
+		tween:Play() repeat wait() until tween.Completed wait(0.1) 
+		if i == #r then 
+			i = 1 
+		else 
+			i = i + 1 
+		end 
+	end
+end
+coroutine.wrap(FBRORD_fake_script)()
+local function FPDIXB_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+	local r = { Color3.fromRGB(209,106,255);
+		Color3.fromRGB(187,68,240); 
+		Color3.fromRGB(150,20,208);
+		Color3.fromRGB(102,0,148); 
+		Color3.fromRGB(150,20,208); 
+		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
+	script.Parent.TextColor3 = r[1] i = 1 
+	while true do 
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, { TextColor3 = r[i]}) 
+		tween:Play() repeat wait() until tween.Completed wait(0.1) 
+		if i == #r then 
+			i = 1 
+		else 
+			i = i + 1 
+		end 
+	end
+end
+coroutine.wrap(FPDIXB_fake_script)()
 
 if isfolder("OverFlux") == false then
     makefolder("OverFlux")
