@@ -42,7 +42,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(-0.000103577971, 0, 0.0498127565, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.Arial
-TextLabel_2.Text = "VOID 0.8 | User: Nan"
+TextLabel_2.Text = "VOID 0.8 | Rank: Private"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 16.000
 
