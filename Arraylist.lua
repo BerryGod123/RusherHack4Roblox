@@ -37,24 +37,7 @@ Arraylist = {
 	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	Text.TextStrokeTransparency = 0
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-	local rasicm = { Color3.fromRGB(209,106,255);
-		Color3.fromRGB(187,68,240); 
-		Color3.fromRGB(150,20,208);
-		Color3.fromRGB(102,0,148); 
-		Color3.fromRGB(150,20,208); 
-		Color3.fromRGB(187,68,240); 
-		Color3.fromRGB(209,106,255)} 
-	local tweeninfoanim = TweenInfo.new(0.3, Enum.EasingStyle.Vertical, Enum.EasingDirection.InOut, 0, false, 0) 
-	Frome.BackgroundColor3 = r[1] nigga = 1 
-	while true do 
-		local tween = game:GetService("TweenService"):Create(Frome, tweeninfoanim, { BackgroundColor3 = rasicm[i]}) 
-		tween:Play() repeat wait() until tween.Completed wait(0.1) 
-		if nigga == #rasicm then 
-			nigga = 1 
-		else 
-			nigga = nigga + 1 
-		end 
-	end
+
     end,
     Remove = function(Name)
         if arrayFrame:FindFirstChild(Name) then
