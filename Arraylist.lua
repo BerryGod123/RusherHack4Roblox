@@ -29,6 +29,7 @@ Arraylist = {
 	Text.AutomaticSize = "X"
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
+	Text.Position = UDim2.new(0, -1, 0, 0)
         Text.Text = newName.." "
 	asd = Text.AbsoluteSize.Y * 0.7
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
@@ -39,7 +40,7 @@ Arraylist = {
 	Text.TextStrokeTransparency = 0
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
 	Frome.Size = UDim2.new(0, 2, 0, 50)
-	Frame.Position = UDim2.new(1, 0, 0, 0)
+	Frame.Position = UDim2.new(0, 248, 0, 0)
 
     end,
     Remove = function(Name)
