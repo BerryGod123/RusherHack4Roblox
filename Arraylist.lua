@@ -38,7 +38,7 @@ Arraylist = {
 	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	Text.TextStrokeTransparency = 0
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-	Frome.Size = UDim2.new(0, 3, 0, 50)
+	Frome.Size = UDim2.new(0, 2, 0, 50)
 	Frame.Position = UDim2.new(1, 0, 0, 0)
 
     end,
