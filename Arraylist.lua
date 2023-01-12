@@ -16,6 +16,7 @@ Grid.HorizontalAlignment = "Left"
 Arraylist = {
     Add = function(Name,Suffix)
         local Text = Instance.new("TextLabel",arrayFrame)
+        local Frome = Instance.new("Frame",Text)
         local newName
         if Suffix then
 			newName = Name.." | " ..Suffix
@@ -25,7 +26,7 @@ Arraylist = {
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Font = Enum.Font.Gotham
-	Text.AutomaticSize = "X"
+	    Text.AutomaticSize = "X"
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.Text = newName.." "
@@ -33,9 +34,9 @@ Arraylist = {
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
-        
-	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
-	Text.TextStrokeTransparency = 0
+	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
+	    Text.TextStrokeTransparency = 0
+        Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
 	local rasicm = { Color3.fromRGB(209,106,255);
 		Color3.fromRGB(187,68,240); 
 		Color3.fromRGB(150,20,208);
@@ -64,3 +65,14 @@ Arraylist = {
 
 
 return Arraylist
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
