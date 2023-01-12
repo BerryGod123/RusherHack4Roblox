@@ -38,7 +38,7 @@ Arraylist = {
 	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	Text.TextStrokeTransparency = 0
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-	Frame.Size = UDim2.new(0, 0, 0, 50)
+	Frome.Size = UDim2.new(0, 0, 0, 50)
 
     end,
     Remove = function(Name)
