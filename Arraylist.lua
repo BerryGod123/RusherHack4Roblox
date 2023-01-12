@@ -30,6 +30,7 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.Text = newName.." "
+	asd = Text.AbsoluteSize.Y * 0.7
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
@@ -37,6 +38,7 @@ Arraylist = {
 	Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	Text.TextStrokeTransparency = 0
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
+	Frame.Size = UDim2.new(0, 0, 0, 50)
 
     end,
     Remove = function(Name)
