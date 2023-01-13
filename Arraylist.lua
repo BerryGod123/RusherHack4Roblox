@@ -33,6 +33,7 @@ Arraylist = {
 	    asd = Text.AbsoluteSize.Y * 0.7
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
+	Text.Position = UDim2.new(0, -3, 0, 0)
         Text.LayoutOrder = -size.X
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
