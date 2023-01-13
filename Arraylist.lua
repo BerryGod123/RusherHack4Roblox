@@ -16,7 +16,7 @@ Grid.HorizontalAlignment = "Left"
 Arraylist = {
     Add = function(Name,Suffix)
         local Text = Instance.new("TextLabel",arrayFrame)
-        local Frome = Instance.new("Frame",Text)
+        local Line = Instance.new("Frame",Text)
         local newName
         if Suffix then
 			newName = Name.." | " ..Suffix
@@ -38,9 +38,18 @@ Arraylist = {
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	    Text.TextStrokeTransparency = 0
-        Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-	    Frome.Size = UDim2.new(0, 2, 0, 50)
-	    Frome.Position = UDim2.new(0, 248, 0, 0)
+	        Line.Name = "Line"
+        Line.Parent = Text
+        Line.BackgroundColor3 = Color3.fromRGB(0,0,0)
+        Line.BackgroundTransparency = 0
+        Line.Position = UDim2.new(1, 1, 0.5, 0)
+        Line.AnchorPoint = Vector2.new(-1, 0.5)
+        Line.Size = UDim2.new(0, 3, 0, 20)
+        Line.Font = GuiLibrary.Font
+        Line.Text = ""
+        Line.BorderSizePixel = 0
+        Line.TextSize = GuiLibrary.TextSize --0.000
+        Line.TextXAlignment = Enum.TextXAlignment.Center
 
     end,
     Remove = function(Name)
