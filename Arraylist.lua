@@ -45,7 +45,6 @@ Arraylist = {
         Line.Position = UDim2.new(1, 1, 0.5, 0)
         Line.AnchorPoint = Vector2.new(-1, 0.5)
         Line.Size = UDim2.new(0, 3, 0, 20)
-        Line.Font = Enum.Font.Gotham
         Line.Text = ""
         Line.BorderSizePixel = 0
         Line.TextSize = GuiLibrary.TextSize --0.000
