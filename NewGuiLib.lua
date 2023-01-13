@@ -410,7 +410,7 @@ function lib:CreateWindow()
     TabsFrame.BackgroundTransparency = 1.000
     TabsFrame.BorderSizePixel = 0
     TabsFrame.Position = UDim2.new(0.010, 0,0.010, 0)
-    TabsFrame.Size = UDim2.new(0, 235, 0, 28)
+    TabsFrame.Size = UDim2.new(0, 235, 0, 35)
     TabsFrame.AutomaticSize = "X"
     uilistthingy.Parent = TabsFrame
     uilistthingy.FillDirection = Enum.FillDirection.Horizontal
@@ -432,7 +432,7 @@ function lib:CreateWindow()
         tab.BorderSizePixel = 1
         tab.Position = UDim2.new(0,40,0.858895704, 0)
         tab.BorderColor3 = Color3.fromRGB(170, 0, 255)
-        tab.Size = UDim2.new(0, 235, 0, 28)
+        tab.Size = UDim2.new(0, 235, 0, 35) -- 0, 235, 0, 35
         tab.Active=true
         tab.AutomaticSize = "Y"
         tab.LayoutOrder = 1 + #tabs
@@ -446,7 +446,7 @@ function lib:CreateWindow()
         tabname.BorderSizePixel = 1
         tabname.BorderColor3 = Color3.fromRGB(170, 0, 255)
         tabname.Position = UDim2.new(0, 199,0, 40)
-        tabname.Size = UDim2.new(0, 235, 0, 28)
+        tabname.Size = UDim2.new(0, 235, 0, 35)
         tabname.Font = Enum.Font.SourceSansLight
         tabname.Text = " "..title
         tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -497,7 +497,7 @@ function lib:CreateWindow()
             toggle.BackgroundColor3 = Color3.fromRGB(55,55,55)
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
-            toggle.Size = UDim2.new(0, 235, 0, 28)
+            toggle.Size = UDim2.new(0, 235, 0, 35)
             toggle.Text = ""
             togname.Name = "toggle_" .. title .. "234"
             togname.Parent = toggle
