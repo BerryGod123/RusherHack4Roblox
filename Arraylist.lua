@@ -1,22 +1,24 @@
 local array = Instance.new("ScreenGui", game:GetService("CoreGui"))
 local arrayFrame = Instance.new("Frame", array)
-arrayFrame.Size = UDim2.new(0.13, 0, 1, 0)
-arrayFrame.Position = UDim2.new(0.87, 0, 0, 0)
-arrayFrame.BackgroundTransparency = 1
-arrayFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-arrayFrame.AutomaticSize = "X"
+arrayFrame.Name = "ArrayList"
+arrayFrame.Parent = ScreenGui
+arrayFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+arrayFrame.BackgroundTransparency = 1.000
+arrayFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+arrayFrame.Size = UDim2.new(0, 197, 0, 346)
+arrayFrame.Visible = false
 local Grid = Instance.new("UIGridLayout",arrayFrame)
-Grid.CellPadding = UDim2.new(0, 0, 0.0001, 0)
+Grid.Parent = ArrayList
+Grid.HorizontalAlignment = Enum.HorizontalAlignment.Right
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
-Grid.CellSize = UDim2.new(1, 0, 0.0275, 0)
-Grid.HorizontalAlignment = "Left"
+Grid.Padding = UDim.new(0, 0)
 
 
 
 Arraylist = {
     Add = function(Name,Suffix)
         local Text = Instance.new("TextLabel",arrayFrame)
-        local Frome = Instance.new("Frame",Text)
+        local Line = Instance.new("Frame",Text)
         local newName
         if Suffix then
 			newName = Name.." | " ..Suffix
@@ -33,16 +35,22 @@ Arraylist = {
 	    asd = Text.AbsoluteSize.Y * 0.7
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
-	    Text.Position = UDim2.new(0, -3, 0, 0)
         Text.LayoutOrder = -size.X
+        Text.Position = UDim2.new(-0.0152284261, 0, 0, 0)
+        local vec = Text.AbsoluteSize + Vector2.new(5, 0)
+        Text.Size = UDim2.new(0, 10, 0, 18)
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	    Text.TextStrokeTransparency = 0
-        Text.AutomaticSize = "Y"
-        Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-        Frome.AutomaticSize = "Y"
-	    Frome.Position = UDim2.new(0, 248, 0, 0)
-        Frome.BorderSizePixel=0
+	    Line.Name = newName
+        Line.Parent = Text
+        Line.BackgroundColor3 = Color3.fromRGB(255,255,255)
+        Line.BackgroundTransparency = 0
+        Line.Position = UDim2.new(1, 1, 0.5, 0)
+        Line.AnchorPoint = Vector2.new(-1, 0.5)
+        Line.Size = UDim2.new(0, 3, 0, Text.Size.y)
+        Line.BorderSizePixel = 0
+
     end,
     Remove = function(Name)
         if arrayFrame:FindFirstChild(Name) then
