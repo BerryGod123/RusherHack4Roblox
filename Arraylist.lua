@@ -40,7 +40,6 @@ Arraylist = {
 	    Text.TextStrokeTransparency = 0
         Text.AutomaticSize = "Y"
         Frome.BackgroundColor3 =Color3.fromRGB(170, 0, 255)
-        Line.Size = UDim2.new(0, 3, 0, 0)
         Frome.AutomaticSize = "Y"
 	    Frome.Position = UDim2.new(0, 248, 0, 0)
         Frome.BorderSizePixel=0
