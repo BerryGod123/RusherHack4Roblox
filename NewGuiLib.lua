@@ -522,7 +522,7 @@ function lib:CreateWindow()
         tabname.Size = UDim2.new(0, 235, 0, 28)
         tabname.Font = Enum.Font.SourceSansLight
         tabname.Text = " "..title
-        tabname.TextColor3 = Color3.fromRGB(0, 0, 0)
+        tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
         tabname.TextSize = 22.000
         tabname.TextWrapped = true
         tabname.TextXAlignment = Enum.TextXAlignment.Left
@@ -613,7 +613,7 @@ function lib:CreateWindow()
                 BindText.Position = UDim2.new(0.0989583358, 0, 0, 0)
                 BindText.Size = UDim2.new(0, 175, 0, 33)
                 BindText.Font = Enum.Font.SourceSansLight
-                BindText.Text = "Bind: none"
+                BindText.Text = "Keybind: none"
                 BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
                 BindText.TextSize = 22.000
                 BindText.TextXAlignment = Enum.TextXAlignment.Left
@@ -630,7 +630,7 @@ function lib:CreateWindow()
                     x = x[title]["Keybind"]
                     --[title]["Keybind"] or "none")
                     if keybinds[x] == true then
-                        BindText.Text = "Bind: "..x
+                        BindText.Text = "Keybind: "..x
                         isclicked = false
                         return
                     end
@@ -638,7 +638,7 @@ function lib:CreateWindow()
                         keybinds[oldkey] = nil
                     end
                     oldkey=x
-                    BindText.Text = "Bind: "..x
+                    BindText.Text = "Keybind: "..x
                     configtable[title]["Keybind"] = x
                     isclicked = false
                     cooldown = true
@@ -649,7 +649,7 @@ function lib:CreateWindow()
                     if not focus["Elements"]["toggle_"..title]  then return end
                     if isclicked == true then return end
                     isclicked = true
-                    BindText.Text = "Bind: ..."
+                    BindText.Text = "Keybind: Press a key"
                     
                     uis.InputBegan:Connect(function(input)
                         if input.KeyCode.Name ~= "Unknown" and input.KeyCode.Name ~= oldkey then
@@ -769,7 +769,7 @@ function lib:CreateWindow()
                 slider.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
                 slider.BorderSizePixel = 0
                 slider.Position = UDim2.new(0.0833333358, 0, 0.109391868, 0)
-                slider.Size = UDim2.new(0, 180, 0, 24)
+                slider.Size = UDim2.new(0, 180, 0, 2)
                 slider.Text = ""
                 slider.AutoButtonColor = false
                 slidertext.Name = "slidertext"
@@ -791,7 +791,7 @@ function lib:CreateWindow()
                 slider_2.BackgroundColor3 = color
                 slider_2.BorderSizePixel = 0
                 slider_2.Position = UDim2.new(0.00786163565, 0, -0.00825500488, 0)
-                slider_2.Size = UDim2.new(0, 0, 0, 34)
+                slider_2.Size = UDim2.new(0, 0, 0, 2)
                 slider_2.ZIndex = 2
                 local mouse = game.Players.LocalPlayer:GetMouse()
                 if configtable[argstable["Name"]..sussyamog["Name"].."_SR"] == nil then
