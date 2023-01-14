@@ -11,7 +11,6 @@ local Grid = Instance.new("UIGridLayout",arrayFrame)
 Grid.Parent = ArrayList
 Grid.HorizontalAlignment = Enum.HorizontalAlignment.Right
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
-Grid.Padding = UDim.new(0, 0)
 
 
 
