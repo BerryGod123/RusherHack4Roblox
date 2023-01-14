@@ -568,6 +568,10 @@ function lib:CreateWindow()
             toggle.Name = "toggle_" .. title
             toggle.Parent = tab
             toggle.BackgroundColor3 = Color3.fromRGB(55,55,55)
+            local UICornertgl = Instance.new("UICorner")
+            local UICornertgll = Instance.new("UICorner")
+            UICornertgl.Parent = toggle
+            UICornertgll.Parent = toggledtog
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
             toggle.Size = UDim2.new(0, 235, 0, 28)
@@ -766,11 +770,14 @@ function lib:CreateWindow()
                 local slider_2 = Instance.new("Frame")
                 slider.Name = "slider"
                 slider.Parent = optionframe
+                local UUICorner = Instance.new("UICorner")
                 slider.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
                 slider.BorderSizePixel = 0
                 slider.Position = UDim2.new(0.0833333358, 0, 0.109391868, 0)
                 slider.Size = UDim2.new(0, 180, 0, 2)
                 slider.Text = ""
+                UUICorner.Parent = slider
+                UUICorner.CornerRadius = UDim.new(0, 8)
                 slider.AutoButtonColor = false
                 slidertext.Name = "slidertext"
                 slidertext.Parent = slider
@@ -790,6 +797,8 @@ function lib:CreateWindow()
                 slider_2.Parent = slider
                 slider_2.BackgroundColor3 = color
                 slider_2.BorderSizePixel = 0
+                local UUIICorner = Instance.new("UICorner")
+                UUIICorner.Parent = slider_2
                 slider_2.Position = UDim2.new(0.00786163565, 0, -0.00825500488, 0)
                 slider_2.Size = UDim2.new(0, 0, 0, 2)
                 slider_2.ZIndex = 2
