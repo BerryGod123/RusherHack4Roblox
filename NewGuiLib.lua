@@ -9,139 +9,212 @@ local lib = {
     ["IsDraggable"] = true,
     ["Objects"] = {}
 }
-local nyaminyami = Instance.new("ScreenGui")
-local TextLabel = Instance.new("TextLabel")
+
+if isfolder("Ketamine") == false then
+    makefolder("Ketamine")
+end
+
+if isfolder("Ketamine/sound") == false then
+    makefolder("Ketamine/sound")
+end
+
+if isfolder("Ketamine/sound/mc") == false then
+    makefolder("Ketamine/sound/mc")
+end
+
+if isfolder("Ketamine/assets") == false then
+    makefolder("Ketamine/assets")
+end
+
+if isfolder("Ketamine/config") == false then 
+    makefolder("Ketamine/config")
+end
+
+if isfolder("Ketamine/scripts") == false then
+    makefolder("Ketamine/scripts")
+end
+-- NotRllyRn's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
 local TextLabel_2 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
 
 --Properties:
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-nyaminyami.Name = "nyaminyami"
-nyaminyami.Parent = game:GetService("CoreGui")
-nyaminyami.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0072254315, 0, 0.00987654366, 0)
+Frame.Size = UDim2.new(0, 136, 0, 25)
 
-TextLabel.Parent = nyaminyami
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = -0.020
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 137, 0, 3)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(227, 227, 228)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(53, 156, 220))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.29, 0.00), NumberSequenceKeypoint.new(0.46, 0.00), NumberSequenceKeypoint.new(0.71, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.000253178179, 0, -0.000804536045, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "VOID"
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.00999999978, 6, 0.787, 0)
+TextLabel.Size = UDim2.new(0, 69, 0, 22)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "ketamine |"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 57.000
+TextLabel.TextSize = 13.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame.Parent = nyaminyami
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.0154773518, 0, 0.0617283955, 0)
-Frame.Size = UDim2.new(0, 157, 0, 2)
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.00722542405, 0, 0.0567900538, 0)
+Frame_3.Size = UDim2.new(0, 136, 0, 25)
 
-TextLabel_2.Parent = nyaminyami
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = -0.020
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(1.12196979e-07, 0, -0.119999997, 0)
+Frame_4.Size = UDim2.new(0, 135, 0, 3)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(227, 227, 228)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(227, 227, 227))}
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.88), NumberSequenceKeypoint.new(0.30, 0.25), NumberSequenceKeypoint.new(0.47, 0.00), NumberSequenceKeypoint.new(0.70, 0.26), NumberSequenceKeypoint.new(1.00, 0.88)}
+UIGradient_2.Parent = Frame_4
+
+TextLabel_2.Parent = Frame_4
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(-0.000103577971, 0, 0.0498127565, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.Arial
-TextLabel_2.Text = "VOID 0.8 | Rank: Private"
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.0195492059, 6, 1.45366287, 0)
+TextLabel_2.Size = UDim2.new(0, 129, 0, 22)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "FPS: NaN"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 16.000
+TextLabel_2.TextSize = 13.000
+
+Frame_5.Parent = ScreenGui
+Frame_5.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.106213868, 0, 0.0567900538, 0)
+Frame_5.Size = UDim2.new(0, 136, 0, 25)
+
+Frame_6.Parent = Frame_5
+Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_6.BackgroundTransparency = -0.020
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0, 0, -0.119999997, 0)
+Frame_6.Size = UDim2.new(0, 136, 0, 3)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(227, 227, 228)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(227, 227, 227))}
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.88), NumberSequenceKeypoint.new(0.30, 0.25), NumberSequenceKeypoint.new(0.47, 0.00), NumberSequenceKeypoint.new(0.70, 0.26), NumberSequenceKeypoint.new(1.00, 0.88)}
+UIGradient_3.Parent = Frame_6
+
+TextLabel_3.Parent = Frame_6
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.0195492059, 6, 1.45366287, 0)
+TextLabel_3.Size = UDim2.new(0, 129, 0, 22)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Ping: NaN"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 13.000
 
 -- Scripts:
 
-local function QDSZZL_fake_script() -- TextLabel.LocalScript 
+local function TBVWYO_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(-1, 0)}
+	local create1 = ts:Create(gradient, ti, offset1)
+	local startPos = Vector2.new(1, 0)
+	local rot = 180
+	gradient.Offset = startPos
+	gradient.Rotation = 0
+	
+	local function completed()
+		if button.BorderSizePixel == 0 and rot == 0 then
+			gradient.Rotation = 180
+			gradient.Offset = startPos
+			create1:Play()	
+		elseif button.BorderSizePixel == 0 and rot == 180 then
+			gradient.Rotation = 0
+			gradient.Offset = startPos
+			create1:Play()
+		end	
+	end
+	create1.Completed:Connect(function() 
+		if rot == 0 then rot = 180 elseif rot == 180 then rot = 0 end
+		completed()
+	end)
+	create1:Play()
+end
+coroutine.wrap(TBVWYO_fake_script)()
+local function HRPPA_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
-	local r = { Color3.fromRGB(209,106,255);
-		Color3.fromRGB(187,68,240); 
-		Color3.fromRGB(150,20,208);
-		Color3.fromRGB(102,0,148); 
-		Color3.fromRGB(150,20,208); 
-		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
-	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
-	script.Parent.TextColor3 = r[1] i = 1 
-	while true do 
-		local tween = game:GetService("TweenService"):Create(script.Parent, info, { TextColor3 = r[i]}) 
-		tween:Play() repeat wait() until tween.Completed wait(0.1) 
-		if i == #r then 
-			i = 1 
-		else 
-			i = i + 1 
-		end 
+	while wait(0.5) do
+		ads = os.date("%H:%M:%S")
+		script.Parent.Text = "ketamine | user: ".. game.Players.LocalPlayer.Name .. " | " .. ads .. "  "
 	end
 end
-coroutine.wrap(QDSZZL_fake_script)()
-local function FBRORD_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	
-	local r = { Color3.fromRGB(209,106,255);
-		Color3.fromRGB(187,68,240); 
-		Color3.fromRGB(150,20,208);
-		Color3.fromRGB(102,0,148); 
-		Color3.fromRGB(150,20,208); 
-		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
-	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
-	script.Parent.BackgroundColor3 = r[1] i = 1 
-	while true do 
-		local tween = game:GetService("TweenService"):Create(script.Parent, info, { BackgroundColor3 = r[i]}) 
-		tween:Play() repeat wait() until tween.Completed wait(0.1) 
-		if i == #r then 
-			i = 1 
-		else 
-			i = i + 1 
-		end 
-	end
-end
-coroutine.wrap(FBRORD_fake_script)()
-local function FPDIXB_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(HRPPA_fake_script)()
+local function ZGQZ_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
-	local r = { Color3.fromRGB(209,106,255);
-		Color3.fromRGB(187,68,240); 
-		Color3.fromRGB(150,20,208);
-		Color3.fromRGB(102,0,148); 
-		Color3.fromRGB(150,20,208); 
-		Color3.fromRGB(187,68,240); Color3.fromRGB(209,106,255)} 
-	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0) 
-	script.Parent.TextColor3 = r[1] i = 1 
-	while true do 
-		local tween = game:GetService("TweenService"):Create(script.Parent, info, { TextColor3 = r[i]}) 
-		tween:Play() repeat wait() until tween.Completed wait(0.1) 
-		if i == #r then 
-			i = 1 
-		else 
-			i = i + 1 
-		end 
+
+	local count = 0
+	
+	game:GetService('RunService').RenderStepped:Connect(function()
+		count += 1
+	end)
+	
+	while wait(1) do
+		script.Parent.Text = "FPS: " .. count
+		count = 0
 	end
 end
-coroutine.wrap(FPDIXB_fake_script)()
+coroutine.wrap(ZGQZ_fake_script)()
+local function ZOHQXB_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
 
-if isfolder("VoidClient") == false then
-    makefolder("VoidClient")
+	while wait(1) do
+		local RemoteFunction = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.MutePlayerRequest -- Cannot created from client it has to be SOME remote function.
+	
+		local Start = tick()
+		RemoteFunction:InvokeServer()
+		local Latency = tick() - Start
+	
+		script.Parent.Text = "Ping: " .. math.floor(Latency * 1000)
+	end
+	
 end
-
-if isfolder("VoidClient/sound") == false then
-    makefolder("VoidClient/sound")
-end
-
-if isfolder("VoidClient/sound/mc") == false then
-    makefolder("VoidClient/sound/mc")
-end
-
-if isfolder("VoidClient/assets") == false then
-    makefolder("VoidClient/assets")
-end
-
-if isfolder("VoidClient/config") == false then
-    makefolder("VoidClient/config")
-end
-
-if isfolder("VoidClient/scripts") == false then
-    makefolder("VoidClient/scripts")
-end
+coroutine.wrap(ZOHQXB_fake_script)()
 
 local sliderapi = {}
 
-local foldername = "VoidClient/config"
+local foldername = "Ketamine/config"
 local conf = {
 	["file"]=foldername.."/"..game.PlaceId..".json",
 	["functions"]={}
@@ -190,7 +263,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local ScreenGuitwo = Instance.new("ScreenGui")
 ScreenGuitwo.Parent = game:WaitForChild("CoreGui")
 ScreenGuitwo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGuitwo.Name = "VoidClientNotificationGui"
+ScreenGuitwo.Name = "KetamineNotificationGui"
 local getasset = getsynasset or getcustomasset
 
 local requestfunc = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request or function(tab)
@@ -232,7 +305,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("VoidClient/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("Ketamine/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -261,7 +334,7 @@ local function getcustomassetfuncforsounds(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("VoidClient/sound", "sound"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("Ketamine/sound", "sound"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -361,7 +434,7 @@ local function dragGUI(gui, dragpart)
                         input.Changed:Connect(function()
                             if input.UserInputState == Enum.UserInputState.End then
                                 dragging = false
-                            end
+                            end -- Void
                         end)
                     end
                 end
@@ -393,9 +466,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("VoidClient/sound/enable.mp3") or getasset("VoidClient/sound/enable.mp3"))
+            playsound(getcustomassetfuncforsounds("Ketamine/sound/enable.mp3") or getasset("Ketamine/sound/enable.mp3"))
         else
-            playsound(getcustomassetfuncforsounds("VoidClient/sound/disable.mp3") or getasset("VoidClient/sound/disable.mp3"))
+            playsound(getcustomassetfuncforsounds("Ketamine/sound/disable.mp3") or getasset("Ketamine/sound/disable.mp3"))
         end
     end
 end
@@ -410,7 +483,7 @@ function lib:CreateWindow()
     TabsFrame.BackgroundTransparency = 1.000
     TabsFrame.BorderSizePixel = 0
     TabsFrame.Position = UDim2.new(0.010, 0,0.010, 0)
-    TabsFrame.Size = UDim2.new(0, 235, 0, 35)
+    TabsFrame.Size = UDim2.new(0, 235, 0, 28)
     TabsFrame.AutomaticSize = "X"
     uilistthingy.Parent = TabsFrame
     uilistthingy.FillDirection = Enum.FillDirection.Horizontal
@@ -432,7 +505,7 @@ function lib:CreateWindow()
         tab.BorderSizePixel = 1
         tab.Position = UDim2.new(0,40,0.858895704, 0)
         tab.BorderColor3 = Color3.fromRGB(170, 0, 255)
-        tab.Size = UDim2.new(0, 235, 0, 35) -- 0, 235, 0, 35
+        tab.Size = UDim2.new(0, 235, 0, 28)
         tab.Active=true
         tab.AutomaticSize = "Y"
         tab.LayoutOrder = 1 + #tabs
@@ -446,10 +519,10 @@ function lib:CreateWindow()
         tabname.BorderSizePixel = 1
         tabname.BorderColor3 = Color3.fromRGB(170, 0, 255)
         tabname.Position = UDim2.new(0, 199,0, 40)
-        tabname.Size = UDim2.new(0, 235, 0, 35)
+        tabname.Size = UDim2.new(0, 235, 0, 28)
         tabname.Font = Enum.Font.SourceSansLight
         tabname.Text = " "..title
-        tabname.TextColor3 = Color3.fromRGB(255, 255, 255)
+        tabname.TextColor3 = Color3.fromRGB(0, 0, 0)
         tabname.TextSize = 22.000
         tabname.TextWrapped = true
         tabname.TextXAlignment = Enum.TextXAlignment.Left
@@ -459,7 +532,7 @@ function lib:CreateWindow()
         assetthing.BackgroundTransparency = 1
         assetthing.Position = UDim2.new(0.86, 0,0.154, 0)
         assetthing.Size = UDim2.new(0, 30, 0, 30)
-        assetthing.Image = getcustomassetfunc("VoidClient/assets/" .. asset .. ".png") or getasset("VoidClient/assets/" .. asset .. ".png")
+        assetthing.Image = getcustomassetfunc("Ketamine/assets/" .. asset .. ".png") or getasset("Ketamine/assets/" .. asset .. ".png")
         local tabtable = {
             ["Toggles"]={}
         }
@@ -497,7 +570,7 @@ function lib:CreateWindow()
             toggle.BackgroundColor3 = Color3.fromRGB(55,55,55)
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
-            toggle.Size = UDim2.new(0, 235, 0, 35)
+            toggle.Size = UDim2.new(0, 235, 0, 28)
             toggle.Text = ""
             togname.Name = "toggle_" .. title .. "234"
             togname.Parent = toggle
@@ -832,7 +905,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!,")
-                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/VoidClient/config\nand delete everything inside of that folder", 10, false)
+                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/Ketamine/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
 
@@ -843,7 +916,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!")
-                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/VoidClient/config\nand delete everything inside of that folder", 10, false)
+                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/Ketamine/config\nand delete everything inside of that folder", 10, false)
                     end
                 end
     			if configtable[ddname] and configtable[ddname]["Value"] then
