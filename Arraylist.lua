@@ -40,7 +40,6 @@ Arraylist = {
         Text.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	    Text.TextStrokeTransparency = 0
-	    Line.Name = newName
 
     end,
     Remove = function(Name)
