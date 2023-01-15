@@ -17,7 +17,6 @@ Grid.SortOrder = Enum.SortOrder.LayoutOrder
 Arraylist = {
     Add = function(Name,Suffix)
         local Text = Instance.new("TextLabel",arrayFrame)
-        local Line = Instance.new("Frame",Text)
         local newName
         if Suffix then
 			newName = Name.." | " ..Suffix
@@ -42,13 +41,6 @@ Arraylist = {
 	    Text.TextColor3 = Color3.fromRGB(170, 0, 255)
 	    Text.TextStrokeTransparency = 0
 	    Line.Name = newName
-        Line.Parent = Text
-        Line.BackgroundColor3 = Color3.fromRGB(255,255,255)
-        Line.BackgroundTransparency = 0
-        Line.Position = UDim2.new(1, 1, 0.5, 0)
-        Line.AnchorPoint = Vector2.new(-1, 0.5)
-        Line.Size = UDim2.new(0, 3, 0, Text.Size.y)
-        Line.BorderSizePixel = 0
 
     end,
     Remove = function(Name)
