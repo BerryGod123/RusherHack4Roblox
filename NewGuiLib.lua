@@ -176,8 +176,8 @@ local function HRPPA_fake_script() -- TextLabel.LocalScript
 	local script = Instance.new('LocalScript', TextLabel)
 
 	while wait(0.5) do
-		ads = os.date("%H:%M:%S")
-		script.Parent.Text = "ketamine | user: ".. game.Players.LocalPlayer.Name .. " | " .. ads .. "  "
+		
+		script.Parent.Text = "ketamine | user: ".. game.Players.LocalPlayer.Name .."  "
 	end
 end
 coroutine.wrap(HRPPA_fake_script)()
