@@ -568,10 +568,6 @@ function lib:CreateWindow()
             toggle.Name = "toggle_" .. title
             toggle.Parent = tab
             toggle.BackgroundColor3 = Color3.fromRGB(55,55,55)
-            local UICornertgl = Instance.new("UICorner")
-            local UICornertgll = Instance.new("UICorner")
-            UICornertgl.Parent = toggle
-            UICornertgll.Parent = toggledtog
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
             toggle.Size = UDim2.new(0, 235, 0, 28)
