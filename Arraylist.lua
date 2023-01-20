@@ -5,6 +5,7 @@ arrayFrame.Parent = ScreenGui
 arrayFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 arrayFrame.BackgroundTransparency = 1.000
 arrayFrame.Position = UDim2.new(0.4, 0, 0.5, 0)
+arrayFrame.AutomaticSize = "X"
 arrayFrame.Size = UDim2.new(0, 197, 0, 346)
 arrayFrame.Visible = false
 local Grid = Instance.new("UIGridLayout",arrayFrame)
