@@ -37,7 +37,7 @@ end
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local ScreendGui = Instance.new("ScreenGui", game:WaitForChild("CoreGui"))
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -52,9 +52,9 @@ local UIGradient_3 = Instance.new("UIGradient")
 local TextLabel_3 = Instance.new("TextLabel")
 
 --Properties:
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
+
+Frame.Parent = ScreendGui
 Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0072254315, 0, 0.00987654366, 0)
@@ -64,6 +64,7 @@ Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BackgroundTransparency = -0.020
 Frame_2.BorderSizePixel = 0
+Frame_2.AutomaticSize = "X"
 Frame_2.Size = UDim2.new(0, 137, 0, 3)
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(227, 227, 228)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(53, 156, 220))}
@@ -82,7 +83,7 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 13.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_3.Parent = ScreenGui
+Frame_3.Parent = ScreendGui
 Frame_3.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 Frame_3.BorderSizePixel = 0
 Frame_3.Position = UDim2.new(0.00722542405, 0, 0.0567900538, 0)
@@ -110,7 +111,7 @@ TextLabel_2.Text = "FPS: NaN"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 13.000
 
-Frame_5.Parent = ScreenGui
+Frame_5.Parent = ScreendGui
 Frame_5.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 Frame_5.BorderSizePixel = 0
 Frame_5.Position = UDim2.new(0.106213868, 0, 0.0567900538, 0)
@@ -617,7 +618,7 @@ function lib:CreateWindow()
                 BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
                 BindText.TextSize = 22.000
                 BindText.TextXAlignment = Enum.TextXAlignment.Left
-                BindText.TextYAlignment = Enum.TextYAlignment.Center
+                BindText.TextYAlignment = Enum.TextYAlignment.Center --slider.size
                 BindText.MouseEnter:Connect(function()
                     focus["Elements"]["toggle_"..title]=true 
                 end)
@@ -770,7 +771,7 @@ function lib:CreateWindow()
                 slider.BackgroundColor3 = Color3.fromRGB(47, 48, 64)
                 slider.BorderSizePixel = 0
                 slider.Position = UDim2.new(0.0833333358, 0, 0.109391868, 0)
-                slider.Size = UDim2.new(0, 180, 0, 2)
+                slider.Size = UDim2.new(0, 180, 0, 34)
                 slider.Text = ""
                 UUICorner.Parent = slider
                 UUICorner.CornerRadius = UDim.new(0, 8)
