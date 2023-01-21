@@ -59,14 +59,14 @@ Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 Frame.BorderSizePixel = 0
 Frame.AutomaticSize = "X"
 Frame.Position = UDim2.new(0.0072254315, 0, 0.00987654366, 0)
-Frame.Size = UDim2.new(0, 136, 0, 25)
+Frame.Size = UDim2.new(0, 0, 0, 25)
 
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BackgroundTransparency = -0.020
 Frame_2.AutomaticSize = "X"
 Frame_2.BorderSizePixel = 0
-Frame_2.Size = UDim2.new(0, 137, 0, 3)
+Frame_2.Size = UDim2.new(0, 0, 0, 3)
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(227, 227, 228)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(53, 156, 220))}
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.29, 0.00), NumberSequenceKeypoint.new(0.46, 0.00), NumberSequenceKeypoint.new(0.71, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
