@@ -38,9 +38,6 @@ end
 -- Instances:
 
 local ScreendGui = Instance.new("ScreenGui", game:WaitForChild("CoreGui"))
-local Frame = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
 local Frame_4 = Instance.new("Frame")
