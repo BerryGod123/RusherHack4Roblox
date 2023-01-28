@@ -113,7 +113,7 @@ TextLabel_3.TextSize = 13.000
 
 
 
-coroutine.wrap(HRPPA_fake_script)()
+
 local function ZGQZ_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
