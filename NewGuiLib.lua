@@ -114,46 +114,8 @@ TextLabel_3.TextSize = 13.000
 
 -- Scripts:
 
-local function TBVWYO_fake_script() -- Frame_2.LocalScript 
-	local script = Instance.new('LocalScript', Frame_2)
 
-	local button = script.Parent
-	local gradient = button.UIGradient
-	local ts = game:GetService("TweenService")
-	local ti = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	local offset1 = {Offset = Vector2.new(-1, 0)}
-	local create1 = ts:Create(gradient, ti, offset1)
-	local startPos = Vector2.new(1, 0)
-	local rot = 180
-	gradient.Offset = startPos
-	gradient.Rotation = 0
-	
-	local function completed()
-		if button.BorderSizePixel == 0 and rot == 0 then
-			gradient.Rotation = 180
-			gradient.Offset = startPos
-			create1:Play()	
-		elseif button.BorderSizePixel == 0 and rot == 180 then
-			gradient.Rotation = 0
-			gradient.Offset = startPos
-			create1:Play()
-		end	
-	end
-	create1.Completed:Connect(function() 
-		if rot == 0 then rot = 180 elseif rot == 180 then rot = 0 end
-		completed()
-	end)
-	create1:Play()
-end
-coroutine.wrap(TBVWYO_fake_script)()
-local function HRPPA_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
 
-	while wait(0.5) do
-		
-		script.Parent.Text = "ketamine | user: ".. game.Players.LocalPlayer.Name .."  "
-	end
-end
 coroutine.wrap(HRPPA_fake_script)()
 local function ZGQZ_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
