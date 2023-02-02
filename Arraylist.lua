@@ -75,11 +75,11 @@ Arraylist = {
 
 	local sizee
         if Settings then
-	    local ztztztztz = Name .. " " .. Settings
+	    local ztztztztz = " " .. Name .. " " .. Settings .. " "
             Text.Text = ztztztztz
 	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         else
-	    local ztztztztz = Name
+	    local ztztztztz = " " .. Name .. " "
 	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
             Text.Text = Name
         end
@@ -100,9 +100,9 @@ Arraylist = {
         shadow.TextSize = TextScale
         if Settings then
             shadow.RichText = true
-            shadow.Text =  Name .. " " .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>'
+            shadow.Text =  " " .. Name .. " " .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>' .. " " 
         else
-            shadow.Text = Name
+            shadow.Text = " " .. Name .. " " 
         end
         shadow.AutomaticSize = "X"
         shadow.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
