@@ -71,7 +71,7 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-	    Text.RichText = true
+	 
         if Settings then
             Text.Text =  Name .. " " .. Settings
         else
