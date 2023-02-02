@@ -71,9 +71,9 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+	    Text.RichText = true
         if Settings then
-            Text.RichText = true
-            Text.Text =  Name .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>'
+            Text.Text =  Name .. " " .. Settings
         else
             Text.Text = Name
         end
@@ -92,7 +92,12 @@ Arraylist = {
         shadow.Position = UDim2.new(0.997, 0, 0, 0)
         shadow.Font = Enum.Font.GothamBold
         shadow.TextSize = TextScale
-        shadow.Text = " " .. Name.." "
+        if Settings then
+            shadow.RichText = true
+            shadow.Text =  Name .. " " .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>'
+        else
+            shadow.Text = Name
+        end
         shadow.AutomaticSize = "X"
         shadow.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
         shadow.TextTransparency = 0
