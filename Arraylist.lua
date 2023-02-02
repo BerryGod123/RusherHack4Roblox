@@ -70,10 +70,11 @@ Arraylist = {
         Text.Font = Enum.Font.GothamBold
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
+        Text.Text = Name .. " " .. Settings
 	    Text.RichText = true
         if Settings then
             local settingcolor = string.find(Text.Text, Settings)
-            Text = '<font color="rgb(255,0,0)">'..Name..'</font>'..settings
+            Text.Text = '<font color="rgb(255,0,0)">' .. Name .. '</font>' .. Settings
         else
             Text.Text = Name.." "
         end
