@@ -73,15 +73,17 @@ Arraylist = {
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 
-	local ztztztztz
+	local sizee
         if Settings then
-	    ztztztztz = Name .. " " .. Settings
+	    local ztztztztz = Name .. " " .. Settings
             Text.Text = ztztztztz
+	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         else
-	    ztztztztz = Name
+	    local ztztztztz = Name
+	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
             Text.Text = Name
         end
-        local sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+        
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
