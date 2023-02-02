@@ -77,7 +77,12 @@ Arraylist = {
         else
             Text.Text = " " .. Name.. " "
         end
-        local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+        local sizee
+        if Settings then
+            sizee = game:GetService("TextService"):GetTextSize(Name .. Settings, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+        else
+            sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+        end
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
@@ -103,7 +108,7 @@ Arraylist = {
         shadow.TextTransparency = 0
         shadow.BackgroundTransparency = 0.5
         shadow.TextStrokeTransparency = 1
-        shadow.TextColor3 = Color3.fromRGB(255, 255, 255)
+        shadow.TextColor3 = Color3.fromRGB(0, 0, 0)
         print(sizee)
         shadow.Size = UDim2.new(0,shadowsize,0.99,1)
         shadow.AutomaticSize = "X"
