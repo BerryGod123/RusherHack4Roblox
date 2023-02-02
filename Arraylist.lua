@@ -70,13 +70,12 @@ Arraylist = {
         Text.Font = Enum.Font.GothamBold
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
-        Text.Text = Name .. " " .. Settings
+        Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 	    Text.RichText = true
         if Settings then
-            local settingcolor = string.find(Text.Text, Settings)
-            Text.Text = '<font color="rgb(255,0,0)">' .. Name .. '</font>' .. Settings
+            Text.Text =  Name .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>'
         else
-            Text.Text = Name.." "
+            Text.Text = Name .. " " .. Settings
         end
         local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
