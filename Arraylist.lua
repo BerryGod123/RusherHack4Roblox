@@ -162,7 +162,7 @@ Arraylist = {
         textcreate1:Play()
         if Settings then
             local settingcolor = string.find(Text.Text, Settings)
-            settingcolor.TextColor3 = Color3.new(1, 1, 1)
+            settingcolor.TextColor3 = Color3.fromRGB(0, 0, 0)
         end
     end,
     Remove = function(Name)
