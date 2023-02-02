@@ -72,10 +72,13 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-	ztztztztz = Name .. " " .. Settings
+
+	local ztztztztz
         if Settings then
-            Text.Text =  
+	    local ztztztztz = Name .. " " .. Settings
+            Text.Text = ztztztztz
         else
+	    local ztztztztz = Name
             Text.Text = Name
         end
         local sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
