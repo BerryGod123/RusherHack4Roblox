@@ -75,10 +75,10 @@ Arraylist = {
 
 	local ztztztztz
         if Settings then
-	    local ztztztztz = Name .. " " .. Settings
+	    ztztztztz = Name .. " " .. Settings
             Text.Text = ztztztztz
         else
-	    local ztztztztz = Name
+	    ztztztztz = Name
             Text.Text = Name
         end
         local sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
