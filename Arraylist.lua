@@ -75,7 +75,7 @@ Arraylist = {
         if Settings then
             Text.Text =  Name .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>'
         else
-            Text.Text = Name .. " " .. Settings
+            Text.Text = Name
         end
         local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
