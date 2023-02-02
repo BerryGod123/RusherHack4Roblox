@@ -63,12 +63,6 @@ Arraylist = {
         Frick.BorderSizePixel = 0
         Frick.Size = UDim2.new(16, 0, 1, 0)
         Frick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        local newName
-        if Settings then
-	        newName = Name .. " " .. Settings 
-        else
-            newName = Name
-        end
         Text.TextColor3 = Text.BackgroundColor3
         Text.Name = Name
         Text.BackgroundTransparency = 1
@@ -76,8 +70,14 @@ Arraylist = {
         Text.Font = Enum.Font.GothamBold
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
-        Text.Text = newName.." "
-        local sizee = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+	    Text.RichText = true
+        if Settings then
+            local settingcolor = string.find(Text.Text, Settings)
+            Text = '<font color="rgb(255,0,0)">'..Name..'</font>'..settings
+        else
+            Text.Text = Name.." "
+        end
+        local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
@@ -92,7 +92,7 @@ Arraylist = {
         shadow.Position = UDim2.new(0.997, 0, 0, 0)
         shadow.Font = Enum.Font.GothamBold
         shadow.TextSize = TextScale
-        shadow.Text = " " .. newName.." "
+        shadow.Text = " " .. Name.." "
         shadow.AutomaticSize = "X"
         shadow.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
         shadow.TextTransparency = 0
@@ -160,10 +160,10 @@ Arraylist = {
             textcompleted()
         end)
         textcreate1:Play()
-        if Settings then
-            local settingcolor = string.find(Text.Text, Settings)
-            settingcolor.TextColor3 = Color3.fromRGB(0, 0, 0)
-        end
+        
+        
+        
+        
     end,
     Remove = function(Name)
         if arrayFrame:FindFirstChild(Name) then
