@@ -49,7 +49,7 @@ end)
 Bozocreate1:Play()
 
 Arraylist = {
-    Add = function(Name,Suffix)
+    Add = function(Name, Settings)
         local Text = Instance.new("TextLabel",arrayFrame)
         local Frick = Instance.new("Frame",Text)
         local UIGradient = Instance.new("UIGradient") 
@@ -64,8 +64,8 @@ Arraylist = {
         Frick.Size = UDim2.new(16, 0, 1, 0)
         Frick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         local newName
-        if Suffix then
-			newName = Name.." - " ..Suffix 
+        if Settings then
+	        newName = Name .. " " .. Settings 
         else
             newName = Name
         end
@@ -81,6 +81,7 @@ Arraylist = {
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
+
         local shadow = Instance.new("TextLabel",Text)
         local TextService = game:GetService("TextService")
         shadow.BorderSizePixel = 0
@@ -159,6 +160,10 @@ Arraylist = {
             textcompleted()
         end)
         textcreate1:Play()
+        if Settings then
+            local settingcolor = string.find(Text.Text, Settings)
+            settingcolor.Color3 = Color3.new(1, 1, 1)
+        end
     end,
     Remove = function(Name)
         if arrayFrame:FindFirstChild(Name) then
