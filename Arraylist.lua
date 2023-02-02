@@ -108,7 +108,7 @@ Arraylist = {
         shadow.TextTransparency = 0
         shadow.BackgroundTransparency = 0.5
         shadow.TextStrokeTransparency = 1
-        shadow.TextColor3 = Color3.fromRGB(23, 23, 23)
+        shadow.TextColor3 = Color3.fromRGB(40, 40, 40)
         print(sizee)
         shadow.Size = UDim2.new(0,shadowsize,0.99,1)
         shadow.AutomaticSize = "X"
