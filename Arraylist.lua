@@ -64,6 +64,7 @@ Arraylist = {
         Frick.Size = UDim2.new(16, 0, 1, 0)
         Frick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Text.TextColor3 = Text.BackgroundColor3
+	Text.RichText = true
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(0,0,1,0)
@@ -71,13 +72,13 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-	 
+	ztztztztz = Name .. " " .. Settings
         if Settings then
-            Text.Text =  Name .. " " .. Settings
+            Text.Text =  
         else
             Text.Text = Name
         end
-        local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+        local sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
