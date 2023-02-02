@@ -15,7 +15,7 @@ topframe.BorderSizePixel = 0
 topframe.BackgroundTransparency = 0
 topframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 local BozoUIGradient = Instance.new("UIGradient")
-BozoUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(191, 223, 245)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(62, 167, 240))}
+BozoUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7.8, 7.8, 7.8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 33.3, 100))}
 BozoUIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.29, 0.00), NumberSequenceKeypoint.new(0.46, 0.00), NumberSequenceKeypoint.new(0.71, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
 BozoUIGradient.Parent = topframe
 local Bozobutton = topframe
@@ -53,7 +53,7 @@ Arraylist = {
         local Text = Instance.new("TextLabel",arrayFrame)
         local Frick = Instance.new("Frame",Text)
         local UIGradient = Instance.new("UIGradient") 
-        UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(191, 223, 245)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(62, 167, 240))}
+        UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7.8, 7.8, 7.8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 33.3, 100))}
         UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.29, 0.00), NumberSequenceKeypoint.new(0.46, 0.00), NumberSequenceKeypoint.new(0.71, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
         UIGradient.Parent = Frick
         
@@ -64,7 +64,6 @@ Arraylist = {
         Frick.Size = UDim2.new(16, 0, 1, 0)
         Frick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Text.TextColor3 = Text.BackgroundColor3
-	Text.RichText = true
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(0,0,1,0)
@@ -72,18 +71,13 @@ Arraylist = {
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-
-	local sizee
+	    Text.RichText = true
         if Settings then
-	    local ztztztztz = " " .. Name .. " " .. Settings .. " "
-            Text.Text = ztztztztz
-	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+            Text.Text =  " " .. Name .. " " .. Settings .. " "
         else
-	    local ztztztztz = " " .. Name .. " "
-	    sizee = game:GetService("TextService"):GetTextSize(ztztztztz, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
-            Text.Text = Name
+            Text.Text = " " .. Name.. " "
         end
-        
+        local sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
         Text.TextTransparency = 1
@@ -100,9 +94,9 @@ Arraylist = {
         shadow.TextSize = TextScale
         if Settings then
             shadow.RichText = true
-            shadow.Text =  " " .. Name .. " " .. '<font color="rgb(0,0,0)">' .. Settings .. '</font>' .. " " 
+            shadow.Text =  " "..Name .. " " .. '<font color="rgb(255,255,255)">' .. Settings .. '</font>' .. " "
         else
-            shadow.Text = " " .. Name .. " " 
+            shadow.Text = " "..Name .. " "
         end
         shadow.AutomaticSize = "X"
         shadow.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
@@ -114,7 +108,7 @@ Arraylist = {
         shadow.Size = UDim2.new(0,shadowsize,0.99,1)
         shadow.AutomaticSize = "X"
         local textUIGradient = Instance.new("UIGradient", shadow)
-        textUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(191, 223, 245)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(62, 167, 240))}
+        textUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7.8, 7.8, 7.8)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 33.3, 100))}
         textUIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.29, 0.00), NumberSequenceKeypoint.new(0.46, 0.00), NumberSequenceKeypoint.new(0.71, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
         local button = Frick
         local gradient = UIGradient
