@@ -10,7 +10,7 @@ Grid.CellSize = UDim2.new(1, 0, 0.0275, 0)
 Grid.HorizontalAlignment = "Left"
 local topframe = Instance.new("Frame", array)
 topframe.Size = UDim2.new(0.38, 0, 0.004, 0)
-topframe.Position = UDim2.new(0.877, 0, 0, 0)
+topframe.Position = UDim2.new(0.89, 0, 0, 0)
 topframe.BorderSizePixel = 0
 topframe.BackgroundTransparency = 0
 topframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -59,7 +59,7 @@ Arraylist = {
         
         
         
-        Frick.Position = UDim2.new(0.997, 0, 0, 0)
+        Frick.Position = UDim2.new(0.997, 0, 0.02, 0)
         Frick.BorderSizePixel = 0
         Frick.Size = UDim2.new(16, 0, 1, 0)
         Frick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
