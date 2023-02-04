@@ -79,7 +79,7 @@ Arraylist = {
         end
         local sizee
         if Settings then
-            sizee = game:GetService("TextService"):GetTextSize(Name .. Settings, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+            sizee = game:GetService("TextService"):GetTextSize(Name .. " " .. Settings, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         else
             sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
         end
