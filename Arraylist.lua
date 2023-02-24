@@ -67,7 +67,7 @@ Arraylist = {
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(0,0,1,0)
-        Text.Font = Enum.Font.GothamBold
+        Text.Font = Enum.Font.SourceSans
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -79,9 +79,9 @@ Arraylist = {
         end
         local sizee
         if Settings then
-            sizee = game:GetService("TextService"):GetTextSize(Name .. " " .. Settings, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+            sizee = game:GetService("TextService"):GetTextSize(Name .. " " .. Settings, TextScale, Enum.Font.SourceSans, Vector2.new(1000000, 1000000))
         else
-            sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.GothamBold, Vector2.new(1000000, 1000000))
+            sizee = game:GetService("TextService"):GetTextSize(Name, TextScale, Enum.Font.SourceSans, Vector2.new(1000000, 1000000))
         end
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -sizee.X
@@ -95,7 +95,7 @@ Arraylist = {
         shadow.Size = UDim2.new(0, vecx.X, 0, vecx.Y)
         shadow.AnchorPoint = Vector2.new(1,0)
         shadow.Position = UDim2.new(0.997, 0, 0, 0)
-        shadow.Font = Enum.Font.GothamBold
+        shadow.Font = Enum.Font.SourceSans
         shadow.TextSize = TextScale
         if Settings then
             shadow.RichText = true
